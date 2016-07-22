@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['spdk_5fbdev_5freset_5fhard',['SPDK_BDEV_RESET_HARD',['../bdev_8h.html#ae0c63447f343002f128438ab17c67f44aed6d033d6181161a4a1817c55fefc96a',1,'bdev.h']]],
+  ['spdk_5fbdev_5freset_5fsoft',['SPDK_BDEV_RESET_SOFT',['../bdev_8h.html#ae0c63447f343002f128438ab17c67f44a11832ecb8d5a025a236889108dee0f4b',1,'bdev.h']]],
   ['spdk_5fioat_5fengine_5fcopy_5fsupported',['SPDK_IOAT_ENGINE_COPY_SUPPORTED',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402a46fdc856e01e8551a6f59b20c2189bc0',1,'ioat.h']]],
   ['spdk_5fioat_5fengine_5ffill_5fsupported',['SPDK_IOAT_ENGINE_FILL_SUPPORTED',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402abb0266507ff9bbdfe64074015c7f6583',1,'ioat.h']]],
   ['spdk_5fnvme_5fcap_5fams_5fvs',['SPDK_NVME_CAP_AMS_VS',['../nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6a0bae550fd4027110273cc75986809274',1,'nvme_spec.h']]],

@@ -1,6 +1,10 @@
 var searchData=
 [
   ['spdk_5fapp_5fopts',['spdk_app_opts',['../structspdk__app__opts.html',1,'']]],
+  ['spdk_5fbdev',['spdk_bdev',['../structspdk__bdev.html',1,'']]],
+  ['spdk_5fbdev_5ffn_5ftable',['spdk_bdev_fn_table',['../structspdk__bdev__fn__table.html',1,'']]],
+  ['spdk_5fbdev_5fio',['spdk_bdev_io',['../structspdk__bdev__io.html',1,'']]],
+  ['spdk_5fbdev_5fmodule_5fif',['spdk_bdev_module_if',['../structspdk__bdev__module__if.html',1,'']]],
   ['spdk_5fconf',['spdk_conf',['../structspdk__conf.html',1,'']]],
   ['spdk_5fconf_5fitem',['spdk_conf_item',['../structspdk__conf__item.html',1,'']]],
   ['spdk_5fconf_5fsection',['spdk_conf_section',['../structspdk__conf__section.html',1,'']]],

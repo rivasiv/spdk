@@ -6,4 +6,5 @@
 <area shape="rect" id="node7" href="$nvme__intel_8h.html" title="Intel NVMe vendor&#45;specific definitions. " alt="" coords="341,81,437,107"/>
 <area shape="rect" id="node8" href="$scsi__spec_8h.html" title="SCSI specification definitions. " alt="" coords="462,81,554,107"/>
 <area shape="rect" id="node5" href="$nvme_8h.html" title="NVMe driver public API. " alt="" coords="166,155,231,182"/>
+<area shape="rect" id="node9" href="$bdev_8h.html" title="Block device abstraction layer. " alt="" coords="477,155,539,182"/>
 </map>
