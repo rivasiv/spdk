@@ -16,12 +16,13 @@ var searchData=
   ['cmic',['cmic',['../structspdk__nvme__ctrlr__data.html#ac01426f766d4b633cca6208c4bdaeed8',1,'spdk_nvme_ctrlr_data']]],
   ['cntlid',['cntlid',['../structspdk__nvme__ctrlr__data.html#a2cbc55b8da6325356bea1a41b45ea76a',1,'spdk_nvme_ctrlr_data::cntlid()'],['../structspdk__nvmf__discovery__log__page__entry.html#ad5cf412899705f398e046fd3f290067d',1,'spdk_nvmf_discovery_log_page_entry::cntlid()']]],
   ['config_5ftext',['config_text',['../structspdk__bdev__module__if.html#afb3bfe8e97f2a2d7688f8817130c856b',1,'spdk_bdev_module_if::config_text()'],['../structspdk__copy__module__if.html#a57ca3f3ef52ca9eaef8343e138341af8',1,'spdk_copy_module_if::config_text()']]],
-  ['cqes',['cqes',['../structspdk__nvme__ctrlr__data.html#a91f0ecc6cd4846cf5c43cb0ad06784e1',1,'spdk_nvme_ctrlr_data']]],
+  ['cqes',['cqes',['../structspdk__nvme__ctrlr__data.html#a0fbe127baef13173b2557b8c4532add0',1,'spdk_nvme_ctrlr_data']]],
   ['cqr',['cqr',['../unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d',1,'spdk_nvme_cap_register']]],
   ['cqs',['cqs',['../unionspdk__nvme__cmbsz__register.html#af1ceb7a8fd105d746f14edf48a672d08',1,'spdk_nvme_cmbsz_register']]],
   ['crkey',['crkey',['../structspdk__nvme__reservation__acquire__data.html#a101b03779e92b8965db452d68cf5a193',1,'spdk_nvme_reservation_acquire_data::crkey()'],['../structspdk__nvme__reservation__register__data.html#a3d7c7c2bdf9cb826c607345c9ff16f2d',1,'spdk_nvme_reservation_register_data::crkey()'],['../structspdk__nvme__reservation__key__data.html#afbf08aee526e9ab913acc265576933a3',1,'spdk_nvme_reservation_key_data::crkey()']]],
   ['css',['css',['../unionspdk__nvme__cc__register.html#a1f03038a3d6fd2b7f2df15b15a887ce6',1,'spdk_nvme_cc_register']]],
   ['css_5fnvm',['css_nvm',['../unionspdk__nvme__cap__register.html#a979775464aecb09d7cd84f5afb4998c2',1,'spdk_nvme_cap_register']]],
+  ['ctratt',['ctratt',['../structspdk__nvme__ctrlr__data.html#a25f3dcb5cfd062dff1e65402c204bd1a',1,'spdk_nvme_ctrlr_data']]],
   ['ctx',['ctx',['../structspdk__bdev__io.html#a48da307abf6dfcc54c1bdb17c2389220',1,'spdk_bdev_io']]],
   ['ctxt',['ctxt',['../structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c',1,'spdk_bdev']]]
 ];
