@@ -13,13 +13,13 @@ var searchData=
   ['next_5fentry',['next_entry',['../structspdk__trace__history.html#a19c2844fdf265b00faf766372de1d577',1,'spdk_trace_history']]],
   ['nguid',['nguid',['../structspdk__nvme__ns__data.html#a3f0a3e19a15e892d1e842e1c83028bf0',1,'spdk_nvme_ns_data']]],
   ['nlbaf',['nlbaf',['../structspdk__nvme__ns__data.html#a2a4ebf525c7d166d31f52530999ddcdf',1,'spdk_nvme_ns_data']]],
-  ['nmic',['nmic',['../structspdk__nvme__ns__data.html#ab87f1b577ccce75591f916ccb6058e82',1,'spdk_nvme_ns_data']]],
+  ['nmic',['nmic',['../structspdk__nvme__ns__data.html#a7a800e4ac6321d7a1fa4d35ad0b86dac',1,'spdk_nvme_ns_data']]],
   ['nn',['nn',['../structspdk__nvme__ctrlr__data.html#a5e6150304b319f8313abbee9fe52b20d',1,'spdk_nvme_ctrlr_data']]],
   ['npss',['npss',['../structspdk__nvme__ctrlr__data.html#a0c739ec5b01b092f9ef152ea594c4fda',1,'spdk_nvme_ctrlr_data']]],
   ['nr_5fregctl',['nr_regctl',['../structspdk__nvme__reservation__status__data.html#ae9baf83c2042297f4af8ff96bfb2c6bc',1,'spdk_nvme_reservation_status_data']]],
   ['nrkey',['nrkey',['../structspdk__nvme__reservation__register__data.html#aaf68d887b0ef26c2e08919930492cc97',1,'spdk_nvme_reservation_register_data']]],
-  ['nsfeat',['nsfeat',['../structspdk__nvme__ns__data.html#a4db5ef6bf615a4b4a96e270cb089c541',1,'spdk_nvme_ns_data']]],
-  ['nsrescap',['nsrescap',['../structspdk__nvme__ns__data.html#a750d979062eb6703d28175d2cc7a1a38',1,'spdk_nvme_ns_data']]],
+  ['nsfeat',['nsfeat',['../structspdk__nvme__ns__data.html#a800918c26f984f789dfdd9bcbbdfd4c9',1,'spdk_nvme_ns_data']]],
+  ['nsrescap',['nsrescap',['../structspdk__nvme__ns__data.html#a6e4600847e89fb6980ca8a990569d446',1,'spdk_nvme_ns_data']]],
   ['nssrs',['nssrs',['../unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5',1,'spdk_nvme_cap_register']]],
   ['nsze',['nsze',['../structspdk__nvme__ns__data.html#a92845e5df214201820179ab8fa063d05',1,'spdk_nvme_ns_data']]],
   ['num_5fchild_5fbdevs',['num_child_bdevs',['../structspdk__bdev.html#a3bb943543ad2af1d40d013f6e9444b17',1,'spdk_bdev']]],
@@ -48,5 +48,6 @@ var searchData=
   ['nvmf_20_28nvme_20over_20fabrics_29',['NVMf (NVMe over Fabrics)',['../nvmf.html',1,'']]],
   ['nvmf_20getting_20started_20guide',['NVMf Getting Started Guide',['../nvmf_getting_started.html',1,'']]],
   ['nvmf_5fspec_2eh',['nvmf_spec.h',['../nvmf__spec_8h.html',1,'']]],
+  ['nvmf_5fspecific',['nvmf_specific',['../structspdk__nvme__ctrlr__data.html#acbb5bb7fc41c1ea519c180cad6039d1b',1,'spdk_nvme_ctrlr_data']]],
   ['nvscc',['nvscc',['../structspdk__nvme__ctrlr__data.html#a9923796b289062d3bc86509f4297c48a',1,'spdk_nvme_ctrlr_data']]]
 ];

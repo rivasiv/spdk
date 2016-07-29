@@ -26,6 +26,7 @@ var searchData=
   ['spdk_5fnvme_5freservation_5ftype',['spdk_nvme_reservation_type',['../nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fstatus_5fcode_5ftype',['spdk_nvme_status_code_type',['../nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52',1,'nvme_spec.h']]],
   ['spdk_5fnvmf_5fadrfam',['spdk_nvmf_adrfam',['../nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5fctrlr_5fmodel',['spdk_nvmf_ctrlr_model',['../nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bc',1,'nvme_spec.h']]],
   ['spdk_5fnvmf_5frdma_5fcms',['spdk_nvmf_rdma_cms',['../nvmf__spec_8h.html#af113f4f57bccb99a0b89f5c715f1e3c3',1,'nvmf_spec.h']]],
   ['spdk_5fnvmf_5frdma_5fprtype',['spdk_nvmf_rdma_prtype',['../nvmf__spec_8h.html#a13b10660d96571b325b48583200af544',1,'nvmf_spec.h']]],
   ['spdk_5fnvmf_5frdma_5fqptype',['spdk_nvmf_rdma_qptype',['../nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43',1,'nvmf_spec.h']]],

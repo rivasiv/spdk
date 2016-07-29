@@ -26,6 +26,8 @@ var searchData=
   ['css',['css',['../unionspdk__nvme__cc__register.html#a1f03038a3d6fd2b7f2df15b15a887ce6',1,'spdk_nvme_cc_register']]],
   ['css_5fnvm',['css_nvm',['../unionspdk__nvme__cap__register.html#a979775464aecb09d7cd84f5afb4998c2',1,'spdk_nvme_cap_register']]],
   ['ctratt',['ctratt',['../structspdk__nvme__ctrlr__data.html#a25f3dcb5cfd062dff1e65402c204bd1a',1,'spdk_nvme_ctrlr_data']]],
+  ['ctrattr',['ctrattr',['../structspdk__nvme__ctrlr__data.html#a0ed775bbc7ca8a827466b009e769e123',1,'spdk_nvme_ctrlr_data']]],
+  ['ctrlr_5fmodel',['ctrlr_model',['../structspdk__nvme__ctrlr__data.html#a67e0d514a1a31a5a74b713e04336ed91',1,'spdk_nvme_ctrlr_data']]],
   ['ctx',['ctx',['../structspdk__bdev__io.html#a48da307abf6dfcc54c1bdb17c2389220',1,'spdk_bdev_io']]],
   ['ctxt',['ctxt',['../structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c',1,'spdk_bdev']]]
 ];

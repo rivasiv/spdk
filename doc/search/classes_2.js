@@ -70,7 +70,6 @@ var searchData=
   ['spdk_5fnvmf_5fcapsule_5fcmd',['spdk_nvmf_capsule_cmd',['../structspdk__nvmf__capsule__cmd.html',1,'']]],
   ['spdk_5fnvmf_5fdiscovery_5flog_5fpage',['spdk_nvmf_discovery_log_page',['../structspdk__nvmf__discovery__log__page.html',1,'']]],
   ['spdk_5fnvmf_5fdiscovery_5flog_5fpage_5fentry',['spdk_nvmf_discovery_log_page_entry',['../structspdk__nvmf__discovery__log__page__entry.html',1,'']]],
-  ['spdk_5fnvmf_5fextended_5fidentify_5fctrlr_5fdata',['spdk_nvmf_extended_identify_ctrlr_data',['../structspdk__nvmf__extended__identify__ctrlr__data.html',1,'']]],
   ['spdk_5fnvmf_5ffabric_5fauth_5frecv_5fcmd',['spdk_nvmf_fabric_auth_recv_cmd',['../structspdk__nvmf__fabric__auth__recv__cmd.html',1,'']]],
   ['spdk_5fnvmf_5ffabric_5fauth_5fsend_5fcmd',['spdk_nvmf_fabric_auth_send_cmd',['../structspdk__nvmf__fabric__auth__send__cmd.html',1,'']]],
   ['spdk_5fnvmf_5ffabric_5fconnect_5fcmd',['spdk_nvmf_fabric_connect_cmd',['../structspdk__nvmf__fabric__connect__cmd.html',1,'']]],

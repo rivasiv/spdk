@@ -192,6 +192,9 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ad2aa28f22c4dc7336caf96815cb70314">SPDK_NVME_DATASET_MANAGEMENT_MAX_RANGES</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memdesc:ad2aa28f22c4dc7336caf96815cb70314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the maximum number of range sets that may be specified in the dataset mangement command. <br /></td></tr>
 <tr class="separator:ad2aa28f22c4dc7336caf96815cb70314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9760bf73611488342b5903ba702fd7b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6">SPDK_NVME_VERSION</a>(mjr,  mnr,  ter)</td></tr>
+<tr class="memdesc:a9760bf73611488342b5903ba702fd7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate raw version in the same format as <a class="el" href="unionspdk__nvme__vs__register.html">spdk_nvme_vs_register</a> for comparison.  <a href="#a9760bf73611488342b5903ba702fd7b6">More...</a><br /></td></tr>
+<tr class="separator:a9760bf73611488342b5903ba702fd7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093f4f54c893a46cc3a776fa667d09a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a093f4f54c893a46cc3a776fa667d09a2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a093f4f54c893a46cc3a776fa667d09a2">SPDK_NVME_IO_FLAGS_PRCHK_REFTAG</a>&#160;&#160;&#160;(1U &lt;&lt; 26)</td></tr>
 <tr class="memdesc:a093f4f54c893a46cc3a776fa667d09a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable protection information checking of the Logical Block Reference Tag field. <br /></td></tr>
@@ -220,7 +223,42 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe specification definitions. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a9760bf73611488342b5903ba702fd7b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_NVME_VERSION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mjr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mnr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ter&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(((uint32_t)(mjr) &lt;&lt; 16) | \</div><div class="line">        ((uint32_t)(mnr) &lt;&lt; 8) | \</div><div class="line">        (uint32_t)(ter))</div></div><!-- fragment -->
+<p>Generate raw version in the same format as <a class="el" href="unionspdk__nvme__vs__register.html">spdk_nvme_vs_register</a> for comparison. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="adf6ad5ec9f8c1aa4c7efc45ee9d646b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -417,6 +455,28 @@ Functions</h2></td></tr>
 
 <p>Submission queue priority values for Create I/O Submission Queue Command. </p>
 <p>Only valid for weighted round robin arbitration method. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b71fb615deb505826eaeddd093e06bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bc">spdk_nvmf_ctrlr_model</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVMe over Fabrics controller model. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2b71fb615deb505826eaeddd093e06bcaa69bdafb2302e973fb9c83f8bfff29c5"></a>SPDK_NVMF_CTRLR_MODEL_DYNAMIC&#160;</td><td class="fielddoc">
+<p>NVM subsystem uses dynamic controller model. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b71fb615deb505826eaeddd093e06bca387c04ba873422f553eec7360e4ea599"></a>SPDK_NVMF_CTRLR_MODEL_STATIC&#160;</td><td class="fielddoc">
+<p>NVM subsystem uses static controller model. </p>
+</td></tr>
+</table>
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lbads',['lbads',['../structspdk__nvme__ns__data.html#aad19d9beb62f0d1305c3a6874b11f284',1,'spdk_nvme_ns_data']]],
-  ['lbaf',['lbaf',['../structspdk__nvme__ns__data.html#a60f4ac6104162da26f9aad874dc29cf2',1,'spdk_nvme_ns_data']]],
+  ['lbaf',['lbaf',['../structspdk__nvme__ns__data.html#a88d9c3560955e07faf9d080a8c005828',1,'spdk_nvme_ns_data']]],
   ['lcore',['lcore',['../structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566',1,'spdk_trace_history']]],
   ['len',['len',['../structspdk__bdev__io.html#a98352919d6adda627b21b5621c8bac7b',1,'spdk_bdev_io::len()'],['../structspdk__json__val.html#aa9e7738fac4cf0d68ed86f263bb7bf1f',1,'spdk_json_val::len()']]],
   ['length',['length',['../structspdk__bdev__io.html#a8977e020d4d6985fbc395e06b696256e',1,'spdk_bdev_io']]],
