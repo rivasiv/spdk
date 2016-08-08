@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SPDK: string.h File Reference</title>
+<title>SPDK: scsi.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -91,58 +91,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">string.h File Reference</div>  </div>
+<div class="title">scsi.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>String utility functions.  
+<p>SCSI to blockdev translation layer.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="string_8h__dep__incl.png" border="0" usemap="#string_8hdep" alt=""/></div>
-<map name="string_8hdep" id="string_8hdep">
-<area shape="rect" id="node2" href="event_8h.html" title="Event framework public API. " alt="" coords="45,80,110,107"/>
-<area shape="rect" id="node3" href="bdev_8h.html" title="Block device abstraction layer. " alt="" coords="5,155,67,181"/>
-<area shape="rect" id="node4" href="scsi_8h.html" title="SCSI to blockdev translation layer. " alt="" coords="91,155,149,181"/>
-</map>
-</div>
-</div><table class="memberdecls">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__port.html">spdk_scsi_port</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html">spdk_scsi_lun</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a SCSI LUN.  <a href="structspdk__scsi__lun.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac80f349c77c57bc28690f46e5de7fe03"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ac80f349c77c57bc28690f46e5de7fe03">spdk_sprintf_alloc</a> (const char *format,...)</td></tr>
-<tr class="memdesc:ac80f349c77c57bc28690f46e5de7fe03"><td class="mdescLeft">&#160;</td><td class="mdescRight">sprintf with automatic buffer allocation.  <a href="#ac80f349c77c57bc28690f46e5de7fe03">More...</a><br /></td></tr>
-<tr class="separator:ac80f349c77c57bc28690f46e5de7fe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc67eadec132156b4f7bd873d1cbc62"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aafc67eadec132156b4f7bd873d1cbc62">spdk_strlwr</a> (char *s)</td></tr>
-<tr class="memdesc:aafc67eadec132156b4f7bd873d1cbc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert string to lowercase in place.  <a href="#aafc67eadec132156b4f7bd873d1cbc62">More...</a><br /></td></tr>
-<tr class="separator:aafc67eadec132156b4f7bd873d1cbc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad39472adf37d067c2fbcf2b1454188c2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ad39472adf37d067c2fbcf2b1454188c2">spdk_strsepq</a> (char **stringp, const char *delim)</td></tr>
-<tr class="memdesc:ad39472adf37d067c2fbcf2b1454188c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a delimited string with quote handling.  <a href="#ad39472adf37d067c2fbcf2b1454188c2">More...</a><br /></td></tr>
-<tr class="separator:ad39472adf37d067c2fbcf2b1454188c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93efecd5ee3d49df20a51b65718efbd1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">spdk_str_trim</a> (char *s)</td></tr>
-<tr class="memdesc:a93efecd5ee3d49df20a51b65718efbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim whitespace from a string in place.  <a href="#a93efecd5ee3d49df20a51b65718efbd1">More...</a><br /></td></tr>
-<tr class="separator:a93efecd5ee3d49df20a51b65718efbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4059581597daba3a63dcd0c875348025"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a4059581597daba3a63dcd0c875348025">spdk_scsi_dev_construct</a> (const char *name, char *lun_name_list[], int *lun_id_list, int num_luns)</td></tr>
+<tr class="memdesc:a4059581597daba3a63dcd0c875348025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#a4059581597daba3a63dcd0c875348025">More...</a><br /></td></tr>
+<tr class="separator:a4059581597daba3a63dcd0c875348025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>String utility functions. </p>
+<div class="textblock"><p>SCSI to blockdev translation layer. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac80f349c77c57bc28690f46e5de7fe03"></a>
+<a class="anchor" id="a4059581597daba3a63dcd0c875348025"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* spdk_sprintf_alloc </td>
+          <td class="memname">struct <a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a>* spdk_scsi_dev_construct </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
+          <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>lun_name_list</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>lun_id_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_luns</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -152,93 +158,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>sprintf with automatic buffer allocation. </p>
-<p>The return value is the formatted string, which should be passed to free() when no longer needed, or NULL on failure. </p>
-
-</div>
-</div>
-<a class="anchor" id="a93efecd5ee3d49df20a51b65718efbd1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* spdk_str_trim </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Trim whitespace from a string in place. </p>
+<p>Constructs a SCSI device object using the given parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>String to trim. </td></tr>
+    <tr><td class="paramname">name</td><td>Name for the SCSI device. </td></tr>
+    <tr><td class="paramname">queue_depth</td><td>Queue depth for the SCSI device. This queue depth is a combined queue depth for all LUNs in the device. </td></tr>
+    <tr><td class="paramname">lun_list</td><td>List of LUN objects for the SCSI device. Caller is responsible for managing the memory containing this list. </td></tr>
+    <tr><td class="paramname">lun_id_list</td><td>List of LUN IDs for the LUN in this SCSI device. Caller is responsible for managing the memory containing this list. lun_id_list[x] is the LUN ID for lun_list[x]. </td></tr>
+    <tr><td class="paramname">num_luns</td><td>Number of entries in lun_list and lun_id_list. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="aafc67eadec132156b4f7bd873d1cbc62"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* spdk_strlwr </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert string to lowercase in place. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>String to convert to lowercase. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ad39472adf37d067c2fbcf2b1454188c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* spdk_strsepq </td>
-          <td>(</td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>stringp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>delim</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse a delimited string with quote handling. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stringp</td><td>Pointer to starting location in string. *stringp will be updated to point to the start of the next field, or NULL if the end of the string has been reached. </td></tr>
-    <tr><td class="paramname">delim</td><td>Null-terminated string containing the list of accepted delimiters.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to beginning of the current field.</dd></dl>
-<p>Note that the string will be modified in place to add the string terminator to each field. </p>
+<dl class="section return"><dt>Returns</dt><dd>The constructed <a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a> object. </dd></dl>
 
 </div>
 </div>

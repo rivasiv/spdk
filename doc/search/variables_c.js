@@ -4,7 +4,7 @@ var searchData=
   ['nabsn',['nabsn',['../structspdk__nvme__ns__data.html#af880611a5ec1c42bf246557e3b1a11fe',1,'spdk_nvme_ns_data']]],
   ['nabspf',['nabspf',['../structspdk__nvme__ns__data.html#aee16756e2f836613738e3c6a28cf6e63',1,'spdk_nvme_ns_data']]],
   ['nacwu',['nacwu',['../structspdk__nvme__ns__data.html#a4c406cffb1ea6a50464e127064f66948',1,'spdk_nvme_ns_data']]],
-  ['name',['name',['../structspdk__bdev.html#ac51daabc51748546b644ffc8263fcd43',1,'spdk_bdev']]],
+  ['name',['name',['../structspdk__bdev.html#ac51daabc51748546b644ffc8263fcd43',1,'spdk_bdev::name()'],['../structspdk__scsi__lun.html#afcd21c030a69d9b3fe1a51b6de09f9fe',1,'spdk_scsi_lun::name()']]],
   ['nawun',['nawun',['../structspdk__nvme__ns__data.html#ad28697ee63156180d84ef76496ca030f',1,'spdk_nvme_ns_data']]],
   ['nawupf',['nawupf',['../structspdk__nvme__ns__data.html#af01be31aa34caf36761d63da4d46c31a',1,'spdk_nvme_ns_data']]],
   ['nbytes',['nbytes',['../structspdk__bdev__io.html#a71d2ee34b46675b82ddaab2493523646',1,'spdk_bdev_io']]],

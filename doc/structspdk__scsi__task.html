@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SPDK: Related Pages</title>
+<title>SPDK: spdk_scsi_task Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -43,8 +43,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -64,7 +64,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,24 +85,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Related Pages</div>  </div>
+<div class="title">spdk_scsi_task Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all related documentation pages:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="nvme_driver_integration.html" target="_self">NVMe Driver Integration</a></td><td class="desc">Users can integrate the userspace NVMe driver into their environment by implementing the callbacks in <a class="el" href="nvme__impl_8h.html" title="NVMe driver integration callbacks. ">nvme_impl.h</a> </td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="block_backend_modules.html" target="_self">Block Device Backend Modules</a></td><td class="desc">To implement a backend block device driver, a number of functions dictated by struct <a class="el" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. ">spdk_bdev_fn_table</a> must be provided </td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="ioat.html" target="_self">I/OAT Driver</a></td><td class="desc"></td></tr>
-<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="nvme.html" target="_self">NVMe Driver</a></td><td class="desc"></td></tr>
-<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="nvme_async_completion.html" target="_self">NVMe Asynchronous Completion</a></td><td class="desc">The userspace NVMe driver follows an asynchronous polled model for I/O completion </td></tr>
-<tr id="row_5_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="nvme_initialization.html" target="_self">NVMe Initialization</a></td><td class="desc"></td></tr>
-<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="nvme_io_submission.html" target="_self">NVMe I/O Submission</a></td><td class="desc">I/O is submitted to an NVMe namespace using nvme_ns_cmd_xxx functions defined in nvme_ns_cmd.c </td></tr>
-<tr id="row_7_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="nvmf.html" target="_self">NVMf (NVMe over Fabrics)</a></td><td class="desc"></td></tr>
-<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="nvmf_getting_started.html" target="_self">NVMf Getting Started Guide</a></td><td class="desc">The NVMe over Fabrics target is a user space application that presents block devices over the network using RDMA </td></tr>
+<div class="dynheader">
+Collaboration diagram for spdk_scsi_task:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__scsi__task__coll__graph.png" border="0" usemap="#spdk__scsi__task_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__scsi__task_coll__map" id="spdk__scsi__task_coll__map">
+<area shape="rect" id="node2" href="structspdk__scsi__lun.html" title="Represents a SCSI LUN. " alt="" coords="5,95,111,121"/>
+<area shape="rect" id="node3" href="structspdk__scsi__dev.html" title="spdk_scsi_dev" alt="" coords="53,184,162,211"/>
+<area shape="rect" id="node4" href="structspdk__scsi__port.html" title="spdk_scsi_port" alt="" coords="52,275,163,301"/>
+<area shape="rect" id="node5" href="structspdk__bdev.html" title="SPDK block device. " alt="" coords="15,5,101,32"/>
+<area shape="rect" id="node6" href="structspdk__event.html" title="An event is a function that is passed to and called on an lcore. " alt="" coords="187,275,276,301"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:aed0de3999a81a9aeb079f0d9e4c4f098"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098">data_transferred</a></td></tr>
+<tr class="memdesc:aed0de3999a81a9aeb079f0d9e4c4f098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of data actually transferred.  <a href="#aed0de3999a81a9aeb079f0d9e4c4f098">More...</a><br /></td></tr>
+<tr class="separator:aed0de3999a81a9aeb079f0d9e4c4f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="aed0de3999a81a9aeb079f0d9e4c4f098"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_scsi_task::data_transferred</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Amount of data actually transferred. </p>
+<p>Can be less than requested transfer_len - i.e. SCSI INQUIRY. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="scsi_8h.html">scsi.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
