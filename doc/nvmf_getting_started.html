@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SPDK: NVMf Getting Started Guide</title>
+<title>SPDK: NVMe over Fabrics Target Getting Started Guide</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">NVMf Getting Started Guide </div>  </div>
+<div class="title">NVMe over Fabrics Target Getting Started Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The NVMe over Fabrics target is a user space application that presents block devices over the network using RDMA.</p>
@@ -90,15 +90,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>There will be both a target and a host implemented in the Linux kernel, and these are available today as a set of patches against the kernel 4.8 release candidate. All of the testing against th SPDK target has been against the proposed Linux kernel host. This means that for at least the host machine, the kernel will need to be a release candidate until the code is actually merged. For the system running the SPDK target, however, you can run any modern flavor of Linux as required by your NIC vendor's OFED distribution.</p>
 <h1><a class="anchor" id="nvmf_prereqs"></a>
 Prerequisites</h1>
-<p>This guide starts by assuming that you can already build the standard SPDK distribution on your platform. By default, the NVMf target is not built. To build NVMf there are some additional dependencies.</p>
+<p>This guide starts by assuming that you can already build the standard SPDK distribution on your platform. By default, the NVMe over Fabrics target is not built. To build nvmf_tgt there are some additional dependencies.</p>
 <p>Fedora: </p><pre class="fragment">dnf install libibverbs-devel librdmacm-devel
 </pre><p>Ubuntu: </p><pre class="fragment">apt-get install libibverbs-dev librdmacm-dev
-</pre><p>Then build SPDK with the NVMf target enabled, either by editing CONFIG to enable CONFIG_RDMA or enabling it on the <code>make</code> command line:</p>
+</pre><p>Then build SPDK with RDMA enabled, either by editing CONFIG to enable CONFIG_RDMA or enabling it on the <code>make</code> command line:</p>
 <pre class="fragment">make CONFIG_RDMA=y &lt;other config parameters&gt;
 </pre><p>Once built, the binary will be in <code>app/nvmf_tgt</code>.</p>
 <h1><a class="anchor" id="nvmf_config"></a>
-Configuring NVMf</h1>
-<p>An NVMf specific configuration file is used to configure, or 'provision', the NVMf target. This file's primary purpose is to define subsystems. A fully documented example configuration file is located at <code>etc/spdk/nvmf.conf.in</code>.</p>
+Configuring NVMe over Fabrics Target</h1>
+<p>A <code>nvmf_tgt</code>-specific configuration file is used to configure the NVMe over Fabrics target. This file's primary purpose is to define subsystems. A fully documented example configuration file is located at <code>etc/spdk/nvmf.conf.in</code>.</p>
 <p>You should make a copy of the example configuration file, modify it to suit your environment, and then run the nvmf_tgt application and pass it the configuration file using the -c option. Right now, the target requires elevated privileges (root) to run.</p>
 <pre class="fragment">app/nvmf_tgt/nvmf_tgt -c /path/to/nvmf.conf
 </pre> </div></div><!-- contents -->

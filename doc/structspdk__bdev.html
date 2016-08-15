@@ -102,7 +102,6 @@ Collaboration diagram for spdk_bdev:</div>
 <div class="center"><img src="structspdk__bdev__coll__graph.png" border="0" usemap="#spdk__bdev_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev_coll__map" id="spdk__bdev_coll__map">
 <area shape="rect" id="node2" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="5,5,144,32"/>
-<area shape="rect" id="node3" href="structspdk__poller.html" title="A poller is a function that is repeatedly called on an lcore. " alt="" coords="168,5,256,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -161,10 +160,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a8fa201a2ef33b9a020d0df653ae61e2b">is_running</a></td></tr>
 <tr class="memdesc:a8fa201a2ef33b9a020d0df653ae61e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the poller is registered with the reactor. <br /></td></tr>
 <tr class="separator:a8fa201a2ef33b9a020d0df653ae61e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84a955dd8ea93335a91ba854de4ff58e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84a955dd8ea93335a91ba854de4ff58e"></a>
-struct <a class="el" href="structspdk__poller.html">spdk_poller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a84a955dd8ea93335a91ba854de4ff58e">poller</a></td></tr>
-<tr class="memdesc:a84a955dd8ea93335a91ba854de4ff58e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poller to submit IO and check completion. <br /></td></tr>
-<tr class="separator:a84a955dd8ea93335a91ba854de4ff58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87efc4290c0d3dde9fbe74dd55ffacb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae87efc4290c0d3dde9fbe74dd55ffacb"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ae87efc4290c0d3dde9fbe74dd55ffacb">lcore</a></td></tr>
+<tr class="memdesc:ae87efc4290c0d3dde9fbe74dd55ffacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which lcore the poller is running on. <br /></td></tr>
+<tr class="separator:ae87efc4290c0d3dde9fbe74dd55ffacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a17f7ba7dfa151841cbeb31616bdddc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a17f7ba7dfa151841cbeb31616bdddc"></a>
+struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a6a17f7ba7dfa151841cbeb31616bdddc">poller</a></td></tr>
+<tr class="memdesc:a6a17f7ba7dfa151841cbeb31616bdddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poller to submit IO and check completion. <br /></td></tr>
+<tr class="separator:a6a17f7ba7dfa151841cbeb31616bdddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e445b2f9bd0e358853b62a42add670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79e445b2f9bd0e358853b62a42add670"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a79e445b2f9bd0e358853b62a42add670">claimed</a></td></tr>
 <tr class="memdesc:a79e445b2f9bd0e358853b62a42add670"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if another blockdev or a LUN is using this device. <br /></td></tr>

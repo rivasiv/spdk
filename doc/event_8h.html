@@ -116,9 +116,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__event.html">spdk_event</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event is a function that is passed to and called on an lcore.  <a href="structspdk__event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__poller.html">spdk_poller</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A poller is a function that is repeatedly called on an lcore.  <a href="structspdk__poller.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html">spdk_app_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event framework initialization options.  <a href="structspdk__app__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,18 +190,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#aab97da91d9b342335e452aa4978602a3">spdk_event_call</a> (<a class="el" href="structspdk__event.html">spdk_event_t</a> event)</td></tr>
 <tr class="memdesc:aab97da91d9b342335e452aa4978602a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the given event to the associated lcore and call the function. <br /></td></tr>
 <tr class="separator:aab97da91d9b342335e452aa4978602a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ec978beca2d8f6539efe16ed92f0ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3ec978beca2d8f6539efe16ed92f0ff"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#ac3ec978beca2d8f6539efe16ed92f0ff">spdk_poller_register</a> (struct <a class="el" href="structspdk__poller.html">spdk_poller</a> *poller, uint32_t lcore, struct <a class="el" href="structspdk__event.html">spdk_event</a> *complete, uint64_t period_microseconds)</td></tr>
-<tr class="memdesc:ac3ec978beca2d8f6539efe16ed92f0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the given lcore. <br /></td></tr>
-<tr class="separator:ac3ec978beca2d8f6539efe16ed92f0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5f1da09b49fb343c384cc322e2253df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5f1da09b49fb343c384cc322e2253df"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#ac5f1da09b49fb343c384cc322e2253df">spdk_poller_unregister</a> (struct <a class="el" href="structspdk__poller.html">spdk_poller</a> *poller, struct <a class="el" href="structspdk__event.html">spdk_event</a> *complete)</td></tr>
-<tr class="memdesc:ac5f1da09b49fb343c384cc322e2253df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the given lcore. <br /></td></tr>
-<tr class="separator:ac5f1da09b49fb343c384cc322e2253df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d10ea45cd294935ff6d7d7846e2a4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14d10ea45cd294935ff6d7d7846e2a4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a14d10ea45cd294935ff6d7d7846e2a4e">spdk_poller_migrate</a> (struct <a class="el" href="structspdk__poller.html">spdk_poller</a> *poller, int new_lcore, struct <a class="el" href="structspdk__event.html">spdk_event</a> *complete)</td></tr>
-<tr class="memdesc:a14d10ea45cd294935ff6d7d7846e2a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a poller from its current lcore to a new lcore. <br /></td></tr>
-<tr class="separator:a14d10ea45cd294935ff6d7d7846e2a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7366a9ca6bcab90c440fb1de54012fde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7366a9ca6bcab90c440fb1de54012fde"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a7366a9ca6bcab90c440fb1de54012fde">spdk_poller_register</a> (struct spdk_poller **ppoller, spdk_poller_fn fn, void *arg, uint32_t lcore, struct <a class="el" href="structspdk__event.html">spdk_event</a> *complete, uint64_t period_microseconds)</td></tr>
+<tr class="memdesc:a7366a9ca6bcab90c440fb1de54012fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the given lcore. <br /></td></tr>
+<tr class="separator:a7366a9ca6bcab90c440fb1de54012fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a17ad53e73a18c97c56fe041d4f91d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0a17ad53e73a18c97c56fe041d4f91d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#ab0a17ad53e73a18c97c56fe041d4f91d">spdk_poller_unregister</a> (struct spdk_poller **ppoller, struct <a class="el" href="structspdk__event.html">spdk_event</a> *complete)</td></tr>
+<tr class="memdesc:ab0a17ad53e73a18c97c56fe041d4f91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the given lcore. <br /></td></tr>
+<tr class="separator:ab0a17ad53e73a18c97c56fe041d4f91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework public API. </p>
