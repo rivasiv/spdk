@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SPDK: Block Device Backend Modules</title>
+<title>SPDK: spdk_gpt_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -43,8 +43,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -64,6 +64,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,25 +88,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Block Device Backend Modules </div>  </div>
+<div class="title">spdk_gpt_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>To implement a backend block device driver, a number of functions dictated by struct <a class="el" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. ">spdk_bdev_fn_table</a> must be provided.</p>
-<p>The module should register itself using SPDK_BDEV_MODULE_REGISTER or SPDK_VBDEV_MODULE_REGISTER to define the parameters for the module.</p>
-<p>Use SPDK_BDEV_MODULE_REGISTER for all block backends that are real disks. Any virtual backends such as RAID, partitioning, etc. should use SPDK_VBDEV_MODULE_REGISTER.</p>
-<hr/>
-<p>In the module initialization code, the config file sections can be parsed to acquire custom configuration parameters. For example, if the config file has a section such as below: </p><blockquote class="doxtable">
-<pre>
-[MyBE]
-  MyParam 1234
-</pre></blockquote>
-<p>The value can be extracted as the example below: </p><blockquote class="doxtable">
-<pre>
-struct <a class="el" href="structspdk__conf__section.html">spdk_conf_section</a> *sp = spdk_conf_find_section(NULL, "MyBe");
-int my_param = spdk_conf_section_get_intval(sp, "MyParam");
-</pre></blockquote>
-<p>The backend initialization routine also need to create "disks". A virtual representation of each LUN must be constructed. Mainly a struct <a class="el" href="structspdk__bdev.html" title="SPDK block device. ">spdk_bdev</a> must be passed to the bdev database via spdk_bdev_register(). </p>
-</div></div><!-- contents -->
+<div class="dynheader">
+Collaboration diagram for spdk_gpt_header:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__gpt__header__coll__graph.png" border="0" usemap="#spdk__gpt__header_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__gpt__header_coll__map" id="spdk__gpt__header_coll__map">
+<area shape="rect" id="node2" href="structspdk__gpt__guid.html" title="spdk_gpt_guid" alt="" coords="13,5,119,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="gpt__spec_8h.html">gpt_spec.h</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
   <div class="community">

@@ -3,6 +3,7 @@ var searchData=
   ['icdoff',['icdoff',['../structspdk__nvme__ctrlr__data.html#a7f7c1a80ede2f22cf432bd2efada1a0f',1,'spdk_nvme_ctrlr_data']]],
   ['id',['id',['../structspdk__scsi__lun.html#a55315730dc30c666ed13cdc17f21248c',1,'spdk_scsi_lun']]],
   ['ieee',['ieee',['../structspdk__nvme__ctrlr__data.html#a5b9650f02ffc24e94a6708b33272c415',1,'spdk_nvme_ctrlr_data']]],
+  ['io_5ftype_5fsupported',['io_type_supported',['../structspdk__bdev__fn__table.html#ae6d319cbc2243dd0d5e20b272f733efb',1,'spdk_bdev_fn_table']]],
   ['i_2foat_20driver',['I/OAT Driver',['../ioat.html',1,'']]],
   ['ioat_2eh',['ioat.h',['../ioat_8h.html',1,'']]],
   ['ioat_5fspec_2eh',['ioat_spec.h',['../ioat__spec_8h.html',1,'']]],

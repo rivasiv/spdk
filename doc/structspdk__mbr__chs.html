@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SPDK: spdk_bdev_module_if Struct Reference</title>
+<title>SPDK: spdk_mbr_chs Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -87,87 +87,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_bdev_module_if Struct Reference</div>  </div>
+<div class="title">spdk_mbr_chs Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Block device module.  
- <a href="structspdk__bdev__module__if.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a907e596559836e6d0bd50cca7f85a511"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module__if.html#a907e596559836e6d0bd50cca7f85a511">module_init</a> )(void)</td></tr>
-<tr class="memdesc:a907e596559836e6d0bd50cca7f85a511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization function for the module.  <a href="#a907e596559836e6d0bd50cca7f85a511">More...</a><br /></td></tr>
-<tr class="separator:a907e596559836e6d0bd50cca7f85a511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eea503bf9fc943a71f057aaff13975e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module__if.html#a2eea503bf9fc943a71f057aaff13975e">module_fini</a> )(void)</td></tr>
-<tr class="memdesc:a2eea503bf9fc943a71f057aaff13975e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish function for the module.  <a href="#a2eea503bf9fc943a71f057aaff13975e">More...</a><br /></td></tr>
-<tr class="separator:a2eea503bf9fc943a71f057aaff13975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb3bfe8e97f2a2d7688f8817130c856b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb3bfe8e97f2a2d7688f8817130c856b"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module__if.html#afb3bfe8e97f2a2d7688f8817130c856b">config_text</a> )(FILE *fp)</td></tr>
-<tr class="memdesc:afb3bfe8e97f2a2d7688f8817130c856b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called to return a text string representing the module's configuration options for inclusion in a configuration file. <br /></td></tr>
-<tr class="separator:afb3bfe8e97f2a2d7688f8817130c856b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0888494226dfa0f6f462586ea6d6498"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module__if.html#ae0888494226dfa0f6f462586ea6d6498">module_name</a></td></tr>
-<tr class="memdesc:ae0888494226dfa0f6f462586ea6d6498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name for the modules being defined.  <a href="#ae0888494226dfa0f6f462586ea6d6498">More...</a><br /></td></tr>
-<tr class="separator:ae0888494226dfa0f6f462586ea6d6498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712a8cdb8828cd5e81b8854dab66d3ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a712a8cdb8828cd5e81b8854dab66d3ca"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module__if.html#a712a8cdb8828cd5e81b8854dab66d3ca">get_ctx_size</a> )(void)</td></tr>
-<tr class="memdesc:a712a8cdb8828cd5e81b8854dab66d3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the allocation size required for the backend for uses such as local command structs, local SGL, iovecs, or other user context. <br /></td></tr>
-<tr class="separator:a712a8cdb8828cd5e81b8854dab66d3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Block device module. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a2eea503bf9fc943a71f057aaff13975e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* spdk_bdev_module_if::module_fini) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Finish function for the module. </p>
-<p>Called by the spdk application before the spdk application exits to perform any necessary cleanup.</p>
-<p>Modules are not required to define this function. </p>
-
-</div>
-</div>
-<a class="anchor" id="a907e596559836e6d0bd50cca7f85a511"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* spdk_bdev_module_if::module_init) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialization function for the module. </p>
-<p>Called by the spdk application during startup.</p>
-<p>Modules are required to define this function. </p>
-
-</div>
-</div>
-<a class="anchor" id="ae0888494226dfa0f6f462586ea6d6498"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* spdk_bdev_module_if::module_name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Name for the modules being defined. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="bdev_8h.html">bdev.h</a></li>
+<li><a class="el" href="gpt__spec_8h.html">gpt_spec.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

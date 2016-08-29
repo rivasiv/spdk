@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['scsi_2eh',['scsi.h',['../scsi_8h.html',1,'']]],
-  ['scsi_5fspec_2eh',['scsi_spec.h',['../scsi__spec_8h.html',1,'']]],
-  ['string_2eh',['string.h',['../string_8h.html',1,'']]]
+  ['pci_2eh',['pci.h',['../pci_8h.html',1,'']]],
+  ['pci_5fids_2eh',['pci_ids.h',['../pci__ids_8h.html',1,'']]]
 ];

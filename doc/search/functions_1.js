@@ -79,6 +79,7 @@ var searchData=
   ['spdk_5fscsi_5fdev_5fconstruct',['spdk_scsi_dev_construct',['../scsi_8h.html#a4059581597daba3a63dcd0c875348025',1,'scsi.h']]],
   ['spdk_5fsprintf_5falloc',['spdk_sprintf_alloc',['../string_8h.html#ac80f349c77c57bc28690f46e5de7fe03',1,'string.h']]],
   ['spdk_5fstr_5ftrim',['spdk_str_trim',['../string_8h.html#a93efecd5ee3d49df20a51b65718efbd1',1,'string.h']]],
+  ['spdk_5fstrcpy_5fpad',['spdk_strcpy_pad',['../string_8h.html#aa333ebed7fc3529d446f819b647e2d88',1,'string.h']]],
   ['spdk_5fstrlwr',['spdk_strlwr',['../string_8h.html#aafc67eadec132156b4f7bd873d1cbc62',1,'string.h']]],
   ['spdk_5fstrsepq',['spdk_strsepq',['../string_8h.html#ad39472adf37d067c2fbcf2b1454188c2',1,'string.h']]],
   ['spdk_5ftrace_5fclear_5ftpoints',['spdk_trace_clear_tpoints',['../trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe',1,'trace.h']]],

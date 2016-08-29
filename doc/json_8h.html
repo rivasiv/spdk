@@ -131,6 +131,9 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a282fefd919b6a7df96d06d182621b7ae">SPDK_JSON_PARSE_FLAG_DECODE_IN_PLACE</a>&#160;&#160;&#160;0x000000001</td></tr>
 <tr class="memdesc:a282fefd919b6a7df96d06d182621b7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode JSON strings and names in place (modify the input buffer). <br /></td></tr>
 <tr class="separator:a282fefd919b6a7df96d06d182621b7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70b833e42043ec3f254da0fbc3c5787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#ae70b833e42043ec3f254da0fbc3c5787">SPDK_JSON_PARSE_FLAG_ALLOW_COMMENTS</a>&#160;&#160;&#160;0x000000002</td></tr>
+<tr class="memdesc:ae70b833e42043ec3f254da0fbc3c5787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow parsing of comments.  <a href="#ae70b833e42043ec3f254da0fbc3c5787">More...</a><br /></td></tr>
+<tr class="separator:ae70b833e42043ec3f254da0fbc3c5787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -146,7 +149,23 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JSON parsing and encoding. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ae70b833e42043ec3f254da0fbc3c5787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_JSON_PARSE_FLAG_ALLOW_COMMENTS&#160;&#160;&#160;0x000000002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allow parsing of comments. </p>
+<p>Comments are not allowed by the JSON RFC, so this is not enabled by default. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="abd03643e1ee9b7de1e784523196ef471"></a>
 <div class="memitem">
 <div class="memproto">

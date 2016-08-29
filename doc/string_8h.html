@@ -125,6 +125,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a93efecd5ee3d49df20a51b65718efbd1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">spdk_str_trim</a> (char *s)</td></tr>
 <tr class="memdesc:a93efecd5ee3d49df20a51b65718efbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim whitespace from a string in place.  <a href="#a93efecd5ee3d49df20a51b65718efbd1">More...</a><br /></td></tr>
 <tr class="separator:a93efecd5ee3d49df20a51b65718efbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa333ebed7fc3529d446f819b647e2d88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aa333ebed7fc3529d446f819b647e2d88">spdk_strcpy_pad</a> (void *dst, const char *src, size_t size, int pad)</td></tr>
+<tr class="memdesc:aa333ebed7fc3529d446f819b647e2d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a string into a fixed-size buffer, padding extra bytes with a specific character.  <a href="#aa333ebed7fc3529d446f819b647e2d88">More...</a><br /></td></tr>
+<tr class="separator:aa333ebed7fc3529d446f819b647e2d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>String utility functions. </p>
@@ -179,6 +182,56 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="aa333ebed7fc3529d446f819b647e2d88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_strcpy_pad </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a string into a fixed-size buffer, padding extra bytes with a specific character. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>Pointer to destination fixed-size buffer to fill. </td></tr>
+    <tr><td class="paramname">src</td><td>Pointer to source null-terminated string to copy into dst. </td></tr>
+    <tr><td class="paramname">size</td><td>Number of bytes to fill in dst. </td></tr>
+    <tr><td class="paramname">pad</td><td>Character to pad extra space in dst beyond the size of src.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If src is longer than size, only size bytes will be copied. </p>
 
 </div>
 </div>
