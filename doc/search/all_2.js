@@ -8,8 +8,6 @@ var searchData=
   ['cctemp',['cctemp',['../structspdk__nvme__ctrlr__data.html#a346ea97ceaffb3cbaad7b909eb250b14',1,'spdk_nvme_ctrlr_data']]],
   ['cfs',['cfs',['../unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1',1,'spdk_nvme_csts_register']]],
   ['check_5fio',['check_io',['../structspdk__bdev__fn__table.html#a09482ddfcb4ed38815fe6543b225b30c',1,'spdk_bdev_fn_table']]],
-  ['child_5fbdevs',['child_bdevs',['../structspdk__bdev.html#abc0ee35ab32a92d01df9ffa903f21311',1,'spdk_bdev']]],
-  ['children',['children',['../structspdk__bdev__io.html#a82a7fba9fd4689b8cd1503a25485d6fb',1,'spdk_bdev_io']]],
   ['claimed',['claimed',['../structspdk__bdev.html#a79e445b2f9bd0e358853b62a42add670',1,'spdk_bdev']]],
   ['cmbloc',['cmbloc',['../structspdk__nvme__registers.html#aa9b32afa2d41aacdf2e71a92fdd8e530',1,'spdk_nvme_registers']]],
   ['cmbsz',['cmbsz',['../structspdk__nvme__registers.html#a4d9a1bd35de790accaf112507cd89565',1,'spdk_nvme_registers']]],

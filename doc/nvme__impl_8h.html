@@ -142,6 +142,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a6c242cd22416a947cbf420309c3421df"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a6c242cd22416a947cbf420309c3421df">nvme_malloc</a> (const char *tag, size_t size, unsigned align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a6c242cd22416a947cbf420309c3421df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a6c242cd22416a947cbf420309c3421df">More...</a><br /></td></tr>
 <tr class="separator:a6c242cd22416a947cbf420309c3421df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034062a78129bb4d9bf190c4c7edf703"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a034062a78129bb4d9bf190c4c7edf703">nvme_memzone_reserve</a> (const char *name, size_t len, int socket_id, unsigned flags)</td></tr>
+<tr class="memdesc:a034062a78129bb4d9bf190c4c7edf703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id and flags.  <a href="#a034062a78129bb4d9bf190c4c7edf703">More...</a><br /></td></tr>
+<tr class="separator:a034062a78129bb4d9bf190c4c7edf703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91031eb3ffb823c7572c5b8992c6d722"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a91031eb3ffb823c7572c5b8992c6d722">nvme_memzone_lookup</a> (const char *name)</td></tr>
+<tr class="memdesc:a91031eb3ffb823c7572c5b8992c6d722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the memory zone identified by the given name.  <a href="#a91031eb3ffb823c7572c5b8992c6d722">More...</a><br /></td></tr>
+<tr class="separator:a91031eb3ffb823c7572c5b8992c6d722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c1672dd508179f762f70c67576a130"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41c1672dd508179f762f70c67576a130"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a41c1672dd508179f762f70c67576a130">nvme_memzone_free</a> (const char *name)</td></tr>
+<tr class="memdesc:a41c1672dd508179f762f70c67576a130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory zone identified by the given name. <br /></td></tr>
+<tr class="separator:a41c1672dd508179f762f70c67576a130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeaf7ddb1a5cf147e150c63e0fb5d465"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeaf7ddb1a5cf147e150c63e0fb5d465"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#aeeaf7ddb1a5cf147e150c63e0fb5d465">nvme_process_is_primary</a> (void)</td></tr>
+<tr class="memdesc:aeeaf7ddb1a5cf147e150c63e0fb5d465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the calling process is primary process. <br /></td></tr>
+<tr class="separator:aeeaf7ddb1a5cf147e150c63e0fb5d465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe driver integration callbacks. </p>
@@ -213,6 +227,82 @@ Functions</h2></td></tr>
 
 <p>Allocate a pinned, physically contiguous memory buffer with the given size and alignment. </p>
 <p>Note: these calls are only made during driver initialization. Per I/O allocations during driver operation use the nvme_alloc_request callback. </p>
+
+</div>
+</div>
+<a class="anchor" id="a91031eb3ffb823c7572c5b8992c6d722"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* nvme_memzone_lookup </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lookup the memory zone identified by the given name. </p>
+<p>Return a pointer to the reserved memory address. If the reservation cannot be found, return NULL. </p>
+
+</div>
+</div>
+<a class="anchor" id="a034062a78129bb4d9bf190c4c7edf703"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* nvme_memzone_reserve </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reserve a named, process shared memory zone with the given size, socket_id and flags. </p>
+<p>Return a pointer to the allocated memory address. If the allocation cannot be done, return NULL. </p>
 
 </div>
 </div>

@@ -152,14 +152,10 @@ spdk_bdev_io_get_rbuf_cb&#160;</td><td class="memItemRight" valign="bottom"><a c
 enum <a class="el" href="bdev_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a55d5842220321a8a1b0693ee3baa2f96">status</a></td></tr>
 <tr class="memdesc:a55d5842220321a8a1b0693ee3baa2f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status for the IO. <br /></td></tr>
 <tr class="separator:a55d5842220321a8a1b0693ee3baa2f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ba5a017b2221b912ced72f83295f2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61ba5a017b2221b912ced72f83295f2c"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a61ba5a017b2221b912ced72f83295f2c">parent</a></td></tr>
-<tr class="memdesc:a61ba5a017b2221b912ced72f83295f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used in virtual device (e.g., RAID), indicates its parent <a class="el" href="structspdk__bdev__io.html" title="Block device I/O. ">spdk_bdev_io</a>. <br /></td></tr>
-<tr class="separator:a61ba5a017b2221b912ced72f83295f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a7fba9fd4689b8cd1503a25485d6fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82a7fba9fd4689b8cd1503a25485d6fb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a82a7fba9fd4689b8cd1503a25485d6fb">children</a></td></tr>
-<tr class="memdesc:a82a7fba9fd4689b8cd1503a25485d6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of children for this I/O. <br /></td></tr>
-<tr class="separator:a82a7fba9fd4689b8cd1503a25485d6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd367e4223310572d4a79d140ddfac9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcd367e4223310572d4a79d140ddfac9"></a>
+struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#abcd367e4223310572d4a79d140ddfac9">parent</a></td></tr>
+<tr class="memdesc:abcd367e4223310572d4a79d140ddfac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used in virtual device (e.g., RAID), indicates its parent <a class="el" href="structspdk__bdev__io.html" title="Block device I/O. ">spdk_bdev_io</a>. <br /></td></tr>
+<tr class="separator:abcd367e4223310572d4a79d140ddfac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b334589d89261c8e0242fee614caa7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1b334589d89261c8e0242fee614caa7"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ab1b334589d89261c8e0242fee614caa7">driver_ctx</a> [0]</td></tr>
 <tr class="memdesc:ab1b334589d89261c8e0242fee614caa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per I/O context for use by the blockdev module. <br /></td></tr>

@@ -23,7 +23,6 @@ var searchData=
   ['nsrescap',['nsrescap',['../structspdk__nvme__ns__data.html#a80019fa30d19a023b07a6522860f5375',1,'spdk_nvme_ns_data']]],
   ['nssrs',['nssrs',['../unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5',1,'spdk_nvme_cap_register']]],
   ['nsze',['nsze',['../structspdk__nvme__ns__data.html#a92845e5df214201820179ab8fa063d05',1,'spdk_nvme_ns_data']]],
-  ['num_5fchild_5fbdevs',['num_child_bdevs',['../structspdk__bdev.html#a3bb943543ad2af1d40d013f6e9444b17',1,'spdk_bdev']]],
   ['num_5fio_5fqueues',['num_io_queues',['../structspdk__nvme__ctrlr__opts.html#a8960ea3aebb4966d5434747e7c2154f9',1,'spdk_nvme_ctrlr_opts']]],
   ['nuse',['nuse',['../structspdk__nvme__ns__data.html#a9ca1ea6d0d79fd1440a9a2003ac98253',1,'spdk_nvme_ns_data']]],
   ['nvmcap',['nvmcap',['../structspdk__nvme__ns__data.html#a62e4d6afbb536bedde34973cc6f1e234',1,'spdk_nvme_ns_data']]],
