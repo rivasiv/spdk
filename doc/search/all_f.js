@@ -9,7 +9,6 @@ var searchData=
   ['pit2',['pit2',['../structspdk__nvme__ns__data.html#a9ae8a74d4dbae2fec5e858007a7fa2a7',1,'spdk_nvme_ns_data']]],
   ['pit3',['pit3',['../structspdk__nvme__ns__data.html#ae160752518b32469ce2a74908d74a6c8',1,'spdk_nvme_ns_data']]],
   ['pointer',['pointer',['../structspdk__nvme__ns__data.html#a29732c3e15b6b9ebb2e80e4841012d6a',1,'spdk_nvme_ns_data']]],
-  ['poller',['poller',['../structspdk__bdev.html#a6a17f7ba7dfa151841cbeb31616bdddc',1,'spdk_bdev']]],
   ['portid',['portid',['../structspdk__nvmf__discovery__log__page__entry.html#afe04107ae81316f7e1c189472a881e52',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['power_5fgovernor_5fsetting',['power_governor_setting',['../unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e',1,'spdk_nvme_intel_feat_power_governor']]],
   ['prkey',['prkey',['../structspdk__nvme__reservation__acquire__data.html#a7777dded0893794c13c35fd71173514f',1,'spdk_nvme_reservation_acquire_data']]],

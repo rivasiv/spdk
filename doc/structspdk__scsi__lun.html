@@ -119,6 +119,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a6b740d226a4fbf7c5861d4deadb01fcd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#a6b740d226a4fbf7c5861d4deadb01fcd">bdev</a></td></tr>
 <tr class="memdesc:a6b740d226a4fbf7c5861d4deadb01fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The blockdev associated with this LUN.  <a href="#a6b740d226a4fbf7c5861d4deadb01fcd">More...</a><br /></td></tr>
 <tr class="separator:a6b740d226a4fbf7c5861d4deadb01fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6921353d1f30e355b09325e6b0dcc4c9"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#a6921353d1f30e355b09325e6b0dcc4c9">io_channel</a></td></tr>
+<tr class="memdesc:a6921353d1f30e355b09325e6b0dcc4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">I/O channel for the blockdev associated with this LUN.  <a href="#a6921353d1f30e355b09325e6b0dcc4c9">More...</a><br /></td></tr>
+<tr class="separator:a6921353d1f30e355b09325e6b0dcc4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cd9d8a2956b0fb18edb823412ff719"><td class="memItemLeft" align="right" valign="top">pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#a64cd9d8a2956b0fb18edb823412ff719">thread_id</a></td></tr>
+<tr class="memdesc:a64cd9d8a2956b0fb18edb823412ff719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread ID for the thread that allocated the I/O channel for this LUN.  <a href="#a64cd9d8a2956b0fb18edb823412ff719">More...</a><br /></td></tr>
+<tr class="separator:a64cd9d8a2956b0fb18edb823412ff719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcd21c030a69d9b3fe1a51b6de09f9fe"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#afcd21c030a69d9b3fe1a51b6de09f9fe">name</a> [SPDK_SCSI_LUN_MAX_NAME_LENGTH]</td></tr>
 <tr class="memdesc:afcd21c030a69d9b3fe1a51b6de09f9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name for this LUN.  <a href="#afcd21c030a69d9b3fe1a51b6de09f9fe">More...</a><br /></td></tr>
 <tr class="separator:afcd21c030a69d9b3fe1a51b6de09f9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +175,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6921353d1f30e355b09325e6b0dcc4c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_io_channel* spdk_scsi_lun::io_channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I/O channel for the blockdev associated with this LUN. </p>
+
+</div>
+</div>
 <a class="anchor" id="afcd21c030a69d9b3fe1a51b6de09f9fe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -180,6 +200,21 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Name for this LUN. </p>
+
+</div>
+</div>
+<a class="anchor" id="a64cd9d8a2956b0fb18edb823412ff719"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_t spdk_scsi_lun::thread_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread ID for the thread that allocated the I/O channel for this LUN. </p>
+<p>All I/O to this LUN must be performed from this thread. </p>
 
 </div>
 </div>

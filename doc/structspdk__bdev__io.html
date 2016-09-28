@@ -133,6 +133,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a096518d708e224b91e03897b79431afd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd">bdev</a></td></tr>
 <tr class="memdesc:a096518d708e224b91e03897b79431afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The block device that this I/O belongs to.  <a href="#a096518d708e224b91e03897b79431afd">More...</a><br /></td></tr>
 <tr class="separator:a096518d708e224b91e03897b79431afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1b8c3e9cf5dcb07c22ffcb0d2ead05"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a2b1b8c3e9cf5dcb07c22ffcb0d2ead05">ch</a></td></tr>
+<tr class="memdesc:a2b1b8c3e9cf5dcb07c22ffcb0d2ead05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The I/O channel to submit this I/O on.  <a href="#a2b1b8c3e9cf5dcb07c22ffcb0d2ead05">More...</a><br /></td></tr>
+<tr class="separator:a2b1b8c3e9cf5dcb07c22ffcb0d2ead05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c79ae452181ddce77671873df3dc482"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a1c79ae452181ddce77671873df3dc482">type</a></td></tr>
 <tr class="memdesc:a1c79ae452181ddce77671873df3dc482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerated value representing the I/O type.  <a href="#a1c79ae452181ddce77671873df3dc482">More...</a><br /></td></tr>
 <tr class="separator:a1c79ae452181ddce77671873df3dc482"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,6 +295,20 @@ struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>The unaligned rbuf originally allocated. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b1b8c3e9cf5dcb07c22ffcb0d2ead05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_io_channel* spdk_bdev_io::ch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The I/O channel to submit this I/O on. </p>
 
 </div>
 </div>

@@ -103,32 +103,31 @@ Data Fields</h2></td></tr>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a724dab527d4b6be934fc8423f22bd8cb">destruct</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a724dab527d4b6be934fc8423f22bd8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the backend block device object. <br /></td></tr>
 <tr class="separator:a724dab527d4b6be934fc8423f22bd8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09482ddfcb4ed38815fe6543b225b30c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a09482ddfcb4ed38815fe6543b225b30c">check_io</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
-<tr class="memdesc:a09482ddfcb4ed38815fe6543b225b30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the backend for I/O waiting to be completed.  <a href="#a09482ddfcb4ed38815fe6543b225b30c">More...</a><br /></td></tr>
-<tr class="separator:a09482ddfcb4ed38815fe6543b225b30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a794a22f45af583627ff697720248ce"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a5a794a22f45af583627ff697720248ce">submit_request</a> )(struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *)</td></tr>
 <tr class="memdesc:a5a794a22f45af583627ff697720248ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the IO.  <a href="#a5a794a22f45af583627ff697720248ce">More...</a><br /></td></tr>
 <tr class="separator:a5a794a22f45af583627ff697720248ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d319cbc2243dd0d5e20b272f733efb"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#ae6d319cbc2243dd0d5e20b272f733efb">io_type_supported</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a>)</td></tr>
 <tr class="memdesc:ae6d319cbc2243dd0d5e20b272f733efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the block device supports a specific I/O type.  <a href="#ae6d319cbc2243dd0d5e20b272f733efb">More...</a><br /></td></tr>
 <tr class="separator:ae6d319cbc2243dd0d5e20b272f733efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c80e93ae9db4e7fbbce4cf4300185f"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a55c80e93ae9db4e7fbbce4cf4300185f">get_io_channel</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint32_t priority)</td></tr>
+<tr class="memdesc:a55c80e93ae9db4e7fbbce4cf4300185f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an I/O channel for the specific bdev for the calling thread.  <a href="#a55c80e93ae9db4e7fbbce4cf4300185f">More...</a><br /></td></tr>
+<tr class="separator:a55c80e93ae9db4e7fbbce4cf4300185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Function table for a block device backend. </p>
 <p>The backend block device function table provides a set of APIs to allow communication with a backend. The main commands are read/write API calls for I/O via submit_request. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a09482ddfcb4ed38815fe6543b225b30c"></a>
+<a class="anchor" id="a55c80e93ae9db4e7fbbce4cf4300185f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* spdk_bdev_fn_table::check_io) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td>
+          <td class="memname">struct spdk_io_channel*(* spdk_bdev_fn_table::get_io_channel) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint32_t priority)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Poll the backend for I/O waiting to be completed. </p>
-<p>Optional; if the bdev does not have any periodic work to do, this pointer can be NULL. </p>
+<p>Get an I/O channel for the specific bdev for the calling thread. </p>
 
 </div>
 </div>
