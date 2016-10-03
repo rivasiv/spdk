@@ -112,6 +112,17 @@ Configuring iSCSI Target</h1>
   AIO /dev/sdb
 </pre><p>Other TargetNode parameters go here (TargetName, Mapping, etc.): </p><pre class="fragment">[TargetNodeX]
   LUN0 AIO0
+</pre><h1>Ceph RBD </h1>
+<p>Ceph RBD devices are accessed via librbd and librados libraries to access the RADOS block device exported by Ceph.</p>
+<p>Configuration file syntax:</p>
+<pre class="fragment">[Ceph]
+  # The format of provided rbd info should be: Ceph rbd_pool_name rbd_name size.
+  # In the following example, rbd is the name of rbd_pool; foo is the name of
+  # rbd device exported by Ceph; value 512 represents the configured block size
+  # for this rbd, the block size should be a multiple of 512.
+  Ceph rbd foo 512
+</pre><p>Other TargetNode parameters go here (TargetName, Mapping, etc.): </p><pre class="fragment">[TargetNodeX]
+  LUN0 Ceph0
 </pre><h1>NVMe </h1>
 <p>The SPDK NVMe driver by default binds to all NVMe controllers which are not bound to the kernel-mode nvme driver. Users can choose to bind to fewer controllers by setting the NumControllers parameter. Then the NVMe backend controls NVMe controller(s) directly from userspace and completely bypasses the kernel to avoid interrupts and context switching.</p>
 <pre class="fragment">[Nvme]
