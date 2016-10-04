@@ -61,7 +61,7 @@ var searchData=
   ['spdk_5fnvme_5fctrlr_5freset',['spdk_nvme_ctrlr_reset',['../nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fupdate_5ffirmware',['spdk_nvme_ctrlr_update_firmware',['../nvme_8h.html#aa5bf2047c92b9bb1a20cf9493fa9ebf6',1,'nvme.h']]],
   ['spdk_5fnvme_5fdetach',['spdk_nvme_detach',['../nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2',1,'nvme.h']]],
-  ['spdk_5fnvme_5fns_5fcmd_5fdeallocate',['spdk_nvme_ns_cmd_deallocate',['../nvme_8h.html#ae275923b7e982b115483e425c2972ec5',1,'nvme.h']]],
+  ['spdk_5fnvme_5fns_5fcmd_5fdataset_5fmanagement',['spdk_nvme_ns_cmd_dataset_management',['../nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fcmd_5fflush',['spdk_nvme_ns_cmd_flush',['../nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fcmd_5fread',['spdk_nvme_ns_cmd_read',['../nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fcmd_5fread_5fwith_5fmd',['spdk_nvme_ns_cmd_read_with_md',['../nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe',1,'nvme.h']]],

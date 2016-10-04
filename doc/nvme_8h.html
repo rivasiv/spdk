@@ -270,9 +270,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:aa2913b93326e636eca6dfe7b42e349fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe">spdk_nvme_ns_cmd_read_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:aa2913b93326e636eca6dfe7b42e349fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#aa2913b93326e636eca6dfe7b42e349fe">More...</a><br /></td></tr>
 <tr class="separator:aa2913b93326e636eca6dfe7b42e349fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae275923b7e982b115483e425c2972ec5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae275923b7e982b115483e425c2972ec5">spdk_nvme_ns_cmd_deallocate</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint16_t num_ranges, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ae275923b7e982b115483e425c2972ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a deallocation request to the specified NVMe namespace.  <a href="#ae275923b7e982b115483e425c2972ec5">More...</a><br /></td></tr>
-<tr class="separator:ae275923b7e982b115483e425c2972ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c646dd18675c54ffcf834ce699658d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d">spdk_nvme_ns_cmd_dataset_management</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint32_t type, const struct <a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a> *ranges, uint16_t num_ranges, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac0c646dd18675c54ffcf834ce699658d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a data set management request to the specified NVMe namespace.  <a href="#ac0c646dd18675c54ffcf834ce699658d">More...</a><br /></td></tr>
+<tr class="separator:ac0c646dd18675c54ffcf834ce699658d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed0b134e140121bb9bd8664d4a43a5c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6">spdk_nvme_ns_cmd_flush</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed0b134e140121bb9bd8664d4a43a5c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a flush request to the specified NVMe namespace.  <a href="#aed0b134e140121bb9bd8664d4a43a5c6">More...</a><br /></td></tr>
 <tr class="separator:aed0b134e140121bb9bd8664d4a43a5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1282,12 +1282,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 
 </div>
 </div>
-<a class="anchor" id="ae275923b7e982b115483e425c2972ec5"></a>
+<a class="anchor" id="ac0c646dd18675c54ffcf834ce699658d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_nvme_ns_cmd_deallocate </td>
+          <td class="memname">int spdk_nvme_ns_cmd_dataset_management </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
           <td class="paramname"><em>ns</em>, </td>
@@ -1301,8 +1301,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a> *&#160;</td>
+          <td class="paramname"><em>ranges</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1330,20 +1336,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
       </table>
 </div><div class="memdoc">
 
-<p>Submits a deallocation request to the specified NVMe namespace. </p>
+<p>Submits a data set management request to the specified NVMe namespace. </p>
+<p>Data set management operations are designed to optimize interaction with the block translation layer inside the device. The most common type of operation is deallocate, which is often referred to as TRIM or UNMAP.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the deallocation request </td></tr>
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the DSM request </td></tr>
+    <tr><td class="paramname">type</td><td>A bit field constructed from enum spdk_nvme_dsm_attribute. </td></tr>
     <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
-    <tr><td class="paramname">payload</td><td>virtual address pointer to the list of LBA ranges to deallocate </td></tr>
-    <tr><td class="paramname">num_ranges</td><td>number of ranges in the list pointed to by payload; must be between 1 and <a class="el" href="nvme__spec_8h.html#ad2aa28f22c4dc7336caf96815cb70314">SPDK_NVME_DATASET_MANAGEMENT_MAX_RANGES</a>, inclusive. </td></tr>
+    <tr><td class="paramname">ranges</td><td>An array of <a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a> elements describing the LBAs to operate on. </td></tr>
+    <tr><td class="paramname">num_ranges</td><td>The number of elements in the ranges array. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated POSIX errno values otherwise.</dd></dl>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<p>This is a convenience wrapper that will automatically allocate and construct the correct data buffers. Therefore, ranges does not need to be allocated from pinned memory and can be placed on the stack. If a higher performance, zero-copy version of DSM is required, simply build and submit a raw command using <a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291" title="Send the given NVM I/O command to the NVMe controller. ">spdk_nvme_ctrlr_cmd_io_raw()</a>. </p>
 
 </div>
 </div>
