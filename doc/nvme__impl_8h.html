@@ -91,7 +91,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -102,49 +101,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>NVMe driver integration callbacks.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__pci__enum__ctx.html">nvme_pci_enum_ctx</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:adf50014ff34581ab6ea90c1aee4422e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf50014ff34581ab6ea90c1aee4422e1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#adf50014ff34581ab6ea90c1aee4422e1">nvme_free</a>(buf)&#160;&#160;&#160;rte_free(buf)</td></tr>
-<tr class="memdesc:adf50014ff34581ab6ea90c1aee4422e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated with nvme_malloc. <br /></td></tr>
-<tr class="separator:adf50014ff34581ab6ea90c1aee4422e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ec4def60d4d9ea97132c232d2852a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a62ec4def60d4d9ea97132c232d2852a5">nvme_malloc</a>&#160;&#160;&#160;<a class="el" href="env_8h.html#a984f10f9ed752b7fab821c98ca171f63">spdk_zmalloc</a></td></tr>
+<tr class="memdesc:a62ec4def60d4d9ea97132c232d2852a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a62ec4def60d4d9ea97132c232d2852a5">More...</a><br /></td></tr>
+<tr class="separator:a62ec4def60d4d9ea97132c232d2852a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f50a73d6389dc0cb89731863416d7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80f50a73d6389dc0cb89731863416d7f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a80f50a73d6389dc0cb89731863416d7f">nvme_free</a>&#160;&#160;&#160;<a class="el" href="env_8h.html#a452d670d7188f883224574dfabc39f2c">spdk_free</a></td></tr>
+<tr class="memdesc:a80f50a73d6389dc0cb89731863416d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated with nvme_malloc. <br /></td></tr>
+<tr class="separator:a80f50a73d6389dc0cb89731863416d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4385ead16accb8fb37ac5eb481a85ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#af4385ead16accb8fb37ac5eb481a85ee">nvme_memzone_reserve</a>&#160;&#160;&#160;<a class="el" href="env_8h.html#a48afc08099440a88e9e8dc3abf540ab9">spdk_memzone_reserve</a></td></tr>
+<tr class="memdesc:af4385ead16accb8fb37ac5eb481a85ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id and flags.  <a href="#af4385ead16accb8fb37ac5eb481a85ee">More...</a><br /></td></tr>
+<tr class="separator:af4385ead16accb8fb37ac5eb481a85ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143594f615d1643bad7c2ef9735c6daf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a143594f615d1643bad7c2ef9735c6daf">nvme_memzone_lookup</a>&#160;&#160;&#160;<a class="el" href="env_8h.html#a2be5bc3f8fc570f45f2ad087fcb91f9e">spdk_memzone_lookup</a></td></tr>
+<tr class="memdesc:a143594f615d1643bad7c2ef9735c6daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the memory zone identified by the given name.  <a href="#a143594f615d1643bad7c2ef9735c6daf">More...</a><br /></td></tr>
+<tr class="separator:a143594f615d1643bad7c2ef9735c6daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66640a202e98a0721f7b1263671f41d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66640a202e98a0721f7b1263671f41d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#ae66640a202e98a0721f7b1263671f41d">nvme_memzone_free</a>&#160;&#160;&#160;<a class="el" href="env_8h.html#a5c7f9a6391c0e076abd0160b24f2ad81">spdk_memzone_free</a></td></tr>
+<tr class="memdesc:ae66640a202e98a0721f7b1263671f41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory zone identified by the given name. <br /></td></tr>
+<tr class="separator:ae66640a202e98a0721f7b1263671f41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3156f04ec1e907844fcc67679bce2331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3156f04ec1e907844fcc67679bce2331"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a3156f04ec1e907844fcc67679bce2331">nvme_process_is_primary</a>&#160;&#160;&#160;<a class="el" href="env_8h.html#a798ae910c8563b33eea17af50cabb1ab">spdk_process_is_primary</a></td></tr>
+<tr class="memdesc:a3156f04ec1e907844fcc67679bce2331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the calling process is primary process. <br /></td></tr>
+<tr class="separator:a3156f04ec1e907844fcc67679bce2331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a113be6337ce6831ae8bfc95d8dcd9901"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a113be6337ce6831ae8bfc95d8dcd9901"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a113be6337ce6831ae8bfc95d8dcd9901">nvme_vtophys</a>(buf)&#160;&#160;&#160;spdk_vtophys(buf)</td></tr>
 <tr class="memdesc:a113be6337ce6831ae8bfc95d8dcd9901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the physical address for the specified virtual address. <br /></td></tr>
 <tr class="separator:a113be6337ce6831ae8bfc95d8dcd9901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae51bd7576c99be04bca032f9ac9e86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ae51bd7576c99be04bca032f9ac9e86"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a2ae51bd7576c99be04bca032f9ac9e86">nvme_get_tsc</a>()&#160;&#160;&#160;rte_get_timer_cycles()</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a2ae51bd7576c99be04bca032f9ac9e86">nvme_get_tsc</a>()&#160;&#160;&#160;<a class="el" href="env_8h.html#a7d868d272aa0c000f6135966dfadc596">spdk_get_ticks</a>()</td></tr>
 <tr class="memdesc:a2ae51bd7576c99be04bca032f9ac9e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a monotonic timestamp counter (used for measuring timeouts during initialization). <br /></td></tr>
 <tr class="separator:a2ae51bd7576c99be04bca032f9ac9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54313f4fb90c583f2c22b34bb44cd336"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54313f4fb90c583f2c22b34bb44cd336"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a54313f4fb90c583f2c22b34bb44cd336">nvme_get_tsc_hz</a>()&#160;&#160;&#160;rte_get_timer_hz()</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a54313f4fb90c583f2c22b34bb44cd336">nvme_get_tsc_hz</a>()&#160;&#160;&#160;<a class="el" href="env_8h.html#a0e7d0eb3000d71b588486cf9903cd434">spdk_get_ticks_hz</a>()</td></tr>
 <tr class="memdesc:a54313f4fb90c583f2c22b34bb44cd336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tick rate of <a class="el" href="nvme__impl_8h.html#a2ae51bd7576c99be04bca032f9ac9e86" title="Get a monotonic timestamp counter (used for measuring timeouts during initialization). ">nvme_get_tsc()</a> per second. <br /></td></tr>
 <tr class="separator:a54313f4fb90c583f2c22b34bb44cd336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6c242cd22416a947cbf420309c3421df"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a6c242cd22416a947cbf420309c3421df">nvme_malloc</a> (const char *tag, size_t size, unsigned align, uint64_t *phys_addr)</td></tr>
-<tr class="memdesc:a6c242cd22416a947cbf420309c3421df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a6c242cd22416a947cbf420309c3421df">More...</a><br /></td></tr>
-<tr class="separator:a6c242cd22416a947cbf420309c3421df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034062a78129bb4d9bf190c4c7edf703"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a034062a78129bb4d9bf190c4c7edf703">nvme_memzone_reserve</a> (const char *name, size_t len, int socket_id, unsigned flags)</td></tr>
-<tr class="memdesc:a034062a78129bb4d9bf190c4c7edf703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id and flags.  <a href="#a034062a78129bb4d9bf190c4c7edf703">More...</a><br /></td></tr>
-<tr class="separator:a034062a78129bb4d9bf190c4c7edf703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91031eb3ffb823c7572c5b8992c6d722"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a91031eb3ffb823c7572c5b8992c6d722">nvme_memzone_lookup</a> (const char *name)</td></tr>
-<tr class="memdesc:a91031eb3ffb823c7572c5b8992c6d722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the memory zone identified by the given name.  <a href="#a91031eb3ffb823c7572c5b8992c6d722">More...</a><br /></td></tr>
-<tr class="separator:a91031eb3ffb823c7572c5b8992c6d722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c1672dd508179f762f70c67576a130"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41c1672dd508179f762f70c67576a130"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a41c1672dd508179f762f70c67576a130">nvme_memzone_free</a> (const char *name)</td></tr>
-<tr class="memdesc:a41c1672dd508179f762f70c67576a130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory zone identified by the given name. <br /></td></tr>
-<tr class="separator:a41c1672dd508179f762f70c67576a130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeaf7ddb1a5cf147e150c63e0fb5d465"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeaf7ddb1a5cf147e150c63e0fb5d465"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#aeeaf7ddb1a5cf147e150c63e0fb5d465">nvme_process_is_primary</a> (void)</td></tr>
-<tr class="memdesc:aeeaf7ddb1a5cf147e150c63e0fb5d465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the calling process is primary process. <br /></td></tr>
-<tr class="separator:aeeaf7ddb1a5cf147e150c63e0fb5d465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a891b9cb497214cb3426e350157be28b2"><td class="memItemLeft" align="right" valign="top">static nvme_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a891b9cb497214cb3426e350157be28b2">nvme_mempool_create</a> (const char *name, unsigned n, unsigned elt_size, unsigned cache_size)</td></tr>
 <tr class="memdesc:a891b9cb497214cb3426e350157be28b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a mempool with the given configuration.  <a href="#a891b9cb497214cb3426e350157be28b2">More...</a><br /></td></tr>
 <tr class="separator:a891b9cb497214cb3426e350157be28b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,49 +146,15 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe driver integration callbacks. </p>
 <p>This file describes the callback functions required to integrate the userspace NVMe driver for a specific implementation. This implementation is specific for DPDK. Users would revise it as necessary for their own particular environment if not using it within the DPDK framework. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a6c242cd22416a947cbf420309c3421df"></a>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a62ec4def60d4d9ea97132c232d2852a5"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* nvme_malloc </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>tag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>align</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>phys_addr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#define nvme_malloc&#160;&#160;&#160;<a class="el" href="env_8h.html#a984f10f9ed752b7fab821c98ca171f63">spdk_zmalloc</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Allocate a pinned, physically contiguous memory buffer with the given size and alignment. </p>
@@ -202,6 +162,37 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a class="anchor" id="a143594f615d1643bad7c2ef9735c6daf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define nvme_memzone_lookup&#160;&#160;&#160;<a class="el" href="env_8h.html#a2be5bc3f8fc570f45f2ad087fcb91f9e">spdk_memzone_lookup</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lookup the memory zone identified by the given name. </p>
+<p>Return a pointer to the reserved memory address. If the reservation cannot be found, return NULL. </p>
+
+</div>
+</div>
+<a class="anchor" id="af4385ead16accb8fb37ac5eb481a85ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define nvme_memzone_reserve&#160;&#160;&#160;<a class="el" href="env_8h.html#a48afc08099440a88e9e8dc3abf540ab9">spdk_memzone_reserve</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserve a named, process shared memory zone with the given size, socket_id and flags. </p>
+<p>Return a pointer to the allocated memory address. If the allocation cannot be done, return NULL. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a891b9cb497214cb3426e350157be28b2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -247,82 +238,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Create a mempool with the given configuration. </p>
-<p>Return a pointer to the allocated memory address. If the allocation cannot be done, return NULL. </p>
-
-</div>
-</div>
-<a class="anchor" id="a91031eb3ffb823c7572c5b8992c6d722"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* nvme_memzone_lookup </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Lookup the memory zone identified by the given name. </p>
-<p>Return a pointer to the reserved memory address. If the reservation cannot be found, return NULL. </p>
-
-</div>
-</div>
-<a class="anchor" id="a034062a78129bb4d9bf190c4c7edf703"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* nvme_memzone_reserve </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>socket_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reserve a named, process shared memory zone with the given size, socket_id and flags. </p>
 <p>Return a pointer to the allocated memory address. If the allocation cannot be done, return NULL. </p>
 
 </div>
