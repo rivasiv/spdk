@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">env.h File Reference</div>  </div>
@@ -104,19 +105,23 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="env_8h__dep__incl.png" border="0" usemap="#env_8hdep" alt=""/></div>
 <map name="env_8hdep" id="env_8hdep">
-<area shape="rect" id="node2" href="nvme__impl_8h.html" title="NVMe driver integration callbacks. " alt="" coords="5,80,101,107"/>
-<area shape="rect" id="node3" href="ioat_8h.html" title="I/OAT DMA engine driver public interface. " alt="" coords="126,80,181,107"/>
-<area shape="rect" id="node4" href="nvme_8h.html" title="NVMe driver public API. " alt="" coords="205,80,270,107"/>
+<area shape="rect" id="node2" href="ioat_8h.html" title="I/OAT DMA engine driver public interface. " alt="" coords="5,80,60,107"/>
+<area shape="rect" id="node3" href="nvme_8h.html" title="NVMe driver public API. " alt="" coords="84,80,149,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a984f10f9ed752b7fab821c98ca171f63"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a984f10f9ed752b7fab821c98ca171f63">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a984f10f9ed752b7fab821c98ca171f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a984f10f9ed752b7fab821c98ca171f63">More...</a><br /></td></tr>
 <tr class="separator:a984f10f9ed752b7fab821c98ca171f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452d670d7188f883224574dfabc39f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a452d670d7188f883224574dfabc39f2c">spdk_free</a> (void *buf)</td></tr>
-<tr class="memdesc:a452d670d7188f883224574dfabc39f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated with spdk_malloc.  <a href="#a452d670d7188f883224574dfabc39f2c">More...</a><br /></td></tr>
+<tr class="memdesc:a452d670d7188f883224574dfabc39f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated with spdk_zmalloc.  <a href="#a452d670d7188f883224574dfabc39f2c">More...</a><br /></td></tr>
 <tr class="separator:a452d670d7188f883224574dfabc39f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48afc08099440a88e9e8dc3abf540ab9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a48afc08099440a88e9e8dc3abf540ab9">spdk_memzone_reserve</a> (const char *name, size_t len, int socket_id, unsigned flags)</td></tr>
 <tr class="memdesc:a48afc08099440a88e9e8dc3abf540ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id and flags.  <a href="#a48afc08099440a88e9e8dc3abf540ab9">More...</a><br /></td></tr>
@@ -128,6 +133,24 @@ Functions</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a5c7f9a6391c0e076abd0160b24f2ad81">spdk_memzone_free</a> (const char *name)</td></tr>
 <tr class="memdesc:a5c7f9a6391c0e076abd0160b24f2ad81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory zone identified by the given name. <br /></td></tr>
 <tr class="separator:a5c7f9a6391c0e076abd0160b24f2ad81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b47302a948b71f493ae775b53f162e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b47302a948b71f493ae775b53f162e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8b47302a948b71f493ae775b53f162e2">spdk_memzone_dump</a> (FILE *f)</td></tr>
+<tr class="memdesc:a8b47302a948b71f493ae775b53f162e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump debug information about all memzones. <br /></td></tr>
+<tr class="separator:a8b47302a948b71f493ae775b53f162e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7619f7b77a68eaceefca26805eaab5"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a5c7619f7b77a68eaceefca26805eaab5">spdk_mempool_create</a> (const char *name, size_t count, size_t ele_size, size_t cache_size)</td></tr>
+<tr class="memdesc:a5c7619f7b77a68eaceefca26805eaab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool.  <a href="#a5c7619f7b77a68eaceefca26805eaab5">More...</a><br /></td></tr>
+<tr class="separator:a5c7619f7b77a68eaceefca26805eaab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d2feacf9f6979db875add06ab06494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9d2feacf9f6979db875add06ab06494"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab9d2feacf9f6979db875add06ab06494">spdk_mempool_free</a> (struct spdk_mempool *mp)</td></tr>
+<tr class="memdesc:ab9d2feacf9f6979db875add06ab06494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory pool. <br /></td></tr>
+<tr class="separator:ab9d2feacf9f6979db875add06ab06494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5041ebc03066dede6e0972c22dc77f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ada5041ebc03066dede6e0972c22dc77f">spdk_mempool_get</a> (struct spdk_mempool *mp)</td></tr>
+<tr class="memdesc:ada5041ebc03066dede6e0972c22dc77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an element from a memory pool.  <a href="#ada5041ebc03066dede6e0972c22dc77f">More...</a><br /></td></tr>
+<tr class="separator:ada5041ebc03066dede6e0972c22dc77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56233342766c54990e044b8ca2f3d41a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56233342766c54990e044b8ca2f3d41a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a56233342766c54990e044b8ca2f3d41a">spdk_mempool_put</a> (struct spdk_mempool *mp, void *ele)</td></tr>
+<tr class="memdesc:a56233342766c54990e044b8ca2f3d41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put an element back into the memory pool. <br /></td></tr>
+<tr class="separator:a56233342766c54990e044b8ca2f3d41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798ae910c8563b33eea17af50cabb1ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a798ae910c8563b33eea17af50cabb1ab"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a798ae910c8563b33eea17af50cabb1ab">spdk_process_is_primary</a> (void)</td></tr>
 <tr class="memdesc:a798ae910c8563b33eea17af50cabb1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the calling process is primary process. <br /></td></tr>
@@ -162,8 +185,68 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
       </table>
 </div><div class="memdoc">
 
-<p>Free a memory buffer previously allocated with spdk_malloc. </p>
+<p>Free a memory buffer previously allocated with spdk_zmalloc. </p>
 <p>This call is never made from the performance path. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c7619f7b77a68eaceefca26805eaab5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_mempool* spdk_mempool_create </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ele_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>cache_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a thread-safe memory pool. </p>
+<p>Cache size is the number of elements in a thread-local cache. Can be 0 for no caching, or -1 for unspecified. </p>
+
+</div>
+</div>
+<a class="anchor" id="ada5041ebc03066dede6e0972c22dc77f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_mempool_get </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_mempool *&#160;</td>
+          <td class="paramname"><em>mp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an element from a memory pool. </p>
+<p>If no elements remain, return NULL. </p>
 
 </div>
 </div>
