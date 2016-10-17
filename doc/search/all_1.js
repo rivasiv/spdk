@@ -8,6 +8,5 @@ var searchData=
   ['bit_5farray_2eh',['bit_array.h',['../bit__array_8h.html',1,'']]],
   ['blockcnt',['blockcnt',['../structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287',1,'spdk_bdev']]],
   ['blocklen',['blocklen',['../structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862',1,'spdk_bdev']]],
-  ['buf',['buf',['../structspdk__bdev__io.html#ad54769b6194caf65b0dd626c399bd41d',1,'spdk_bdev_io']]],
   ['buf_5funaligned',['buf_unaligned',['../structspdk__bdev__io.html#a10dc0e68647e41b13f257d1d5e8e73bf',1,'spdk_bdev_io']]]
 ];

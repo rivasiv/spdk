@@ -1,0 +1,5 @@
+<map id="spdk_nvmf_subsystem" name="spdk_nvmf_subsystem">
+<area shape="rect" id="node2" href="$structspdk__bdev.html" title="SPDK block device. " alt="" coords="32,95,117,121"/>
+<area shape="rect" id="node3" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node4" href="$structspdk__nvmf__ctrlr__ops.html" title="spdk_nvmf_ctrlr_ops" alt="" coords="142,95,285,121"/>
+</map>

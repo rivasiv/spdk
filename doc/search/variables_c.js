@@ -7,7 +7,6 @@ var searchData=
   ['name',['name',['../structspdk__bdev.html#ac51daabc51748546b644ffc8263fcd43',1,'spdk_bdev::name()'],['../structspdk__scsi__lun.html#afcd21c030a69d9b3fe1a51b6de09f9fe',1,'spdk_scsi_lun::name()']]],
   ['nawun',['nawun',['../structspdk__nvme__ns__data.html#ad28697ee63156180d84ef76496ca030f',1,'spdk_nvme_ns_data']]],
   ['nawupf',['nawupf',['../structspdk__nvme__ns__data.html#af01be31aa34caf36761d63da4d46c31a',1,'spdk_nvme_ns_data']]],
-  ['nbytes',['nbytes',['../structspdk__bdev__io.html#a71d2ee34b46675b82ddaab2493523646',1,'spdk_bdev_io']]],
   ['ncap',['ncap',['../structspdk__nvme__ns__data.html#a641a3b350f2320c9065fed1b4b969636',1,'spdk_nvme_ns_data']]],
   ['need_5faligned_5fbuffer',['need_aligned_buffer',['../structspdk__bdev.html#ad3b7d56e8ac4e45a1eb772df28ac25b4',1,'spdk_bdev']]],
   ['next_5fentry',['next_entry',['../structspdk__trace__history.html#a19c2844fdf265b00faf766372de1d577',1,'spdk_trace_history']]],

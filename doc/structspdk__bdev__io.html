@@ -166,21 +166,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <tr class="memitem:a10dc0e68647e41b13f257d1d5e8e73bf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a10dc0e68647e41b13f257d1d5e8e73bf">buf_unaligned</a></td></tr>
 <tr class="memdesc:a10dc0e68647e41b13f257d1d5e8e73bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unaligned rbuf originally allocated.  <a href="#a10dc0e68647e41b13f257d1d5e8e73bf">More...</a><br /></td></tr>
 <tr class="separator:a10dc0e68647e41b13f257d1d5e8e73bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad54769b6194caf65b0dd626c399bd41d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ad54769b6194caf65b0dd626c399bd41d">buf</a></td></tr>
-<tr class="memdesc:ad54769b6194caf65b0dd626c399bd41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For single buffer cases, pointer to the aligned data buffer.  <a href="#ad54769b6194caf65b0dd626c399bd41d">More...</a><br /></td></tr>
-<tr class="separator:ad54769b6194caf65b0dd626c399bd41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71d2ee34b46675b82ddaab2493523646"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a71d2ee34b46675b82ddaab2493523646">nbytes</a></td></tr>
-<tr class="memdesc:a71d2ee34b46675b82ddaab2493523646"><td class="mdescLeft">&#160;</td><td class="mdescRight">For single buffer cases, size of the data buffer.  <a href="#a71d2ee34b46675b82ddaab2493523646">More...</a><br /></td></tr>
-<tr class="separator:a71d2ee34b46675b82ddaab2493523646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac36ecea8bcf4d82a2cd8ced099c6d41b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ac36ecea8bcf4d82a2cd8ced099c6d41b">offset</a></td></tr>
-<tr class="memdesc:ac36ecea8bcf4d82a2cd8ced099c6d41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting offset (in bytes) of the blockdev for this I/O.  <a href="#ac36ecea8bcf4d82a2cd8ced099c6d41b">More...</a><br /></td></tr>
-<tr class="separator:ac36ecea8bcf4d82a2cd8ced099c6d41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af82d4068efedf29acefa90c97d012a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#af82d4068efedf29acefa90c97d012a7c">put_rbuf</a></td></tr>
-<tr class="memdesc:af82d4068efedf29acefa90c97d012a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate whether the blockdev layer to put rbuf or not.  <a href="#af82d4068efedf29acefa90c97d012a7c">More...</a><br /></td></tr>
-<tr class="separator:af82d4068efedf29acefa90c97d012a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0429238075907c6f637249dda31f3235"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0429238075907c6f637249dda31f3235"></a>
-struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
-<tr class="memdesc:a0429238075907c6f637249dda31f3235"><td class="mdescLeft">&#160;</td><td class="mdescRight">For basic write case, use our own iovec element. <br /></td></tr>
+<tr class="memitem:a0429238075907c6f637249dda31f3235"><td class="memItemLeft" align="right" valign="top">struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
+<tr class="memdesc:a0429238075907c6f637249dda31f3235"><td class="mdescLeft">&#160;</td><td class="mdescRight">For basic read case, use our own iovec element.  <a href="#a0429238075907c6f637249dda31f3235">More...</a><br /></td></tr>
 <tr class="separator:a0429238075907c6f637249dda31f3235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2d3a6a004554c66434a31243030b2da"><td class="memItemLeft" align="right" valign="top">struct iovec *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ab2d3a6a004554c66434a31243030b2da">iovs</a></td></tr>
 <tr class="memdesc:ab2d3a6a004554c66434a31243030b2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, array of iovecs to transfer.  <a href="#ab2d3a6a004554c66434a31243030b2da">More...</a><br /></td></tr>
@@ -191,6 +178,12 @@ struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a98352919d6adda627b21b5621c8bac7b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a98352919d6adda627b21b5621c8bac7b">len</a></td></tr>
 <tr class="memdesc:a98352919d6adda627b21b5621c8bac7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, total size of data to be transferred.  <a href="#a98352919d6adda627b21b5621c8bac7b">More...</a><br /></td></tr>
 <tr class="separator:a98352919d6adda627b21b5621c8bac7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36ecea8bcf4d82a2cd8ced099c6d41b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ac36ecea8bcf4d82a2cd8ced099c6d41b">offset</a></td></tr>
+<tr class="memdesc:ac36ecea8bcf4d82a2cd8ced099c6d41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting offset (in bytes) of the blockdev for this I/O.  <a href="#ac36ecea8bcf4d82a2cd8ced099c6d41b">More...</a><br /></td></tr>
+<tr class="separator:ac36ecea8bcf4d82a2cd8ced099c6d41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82d4068efedf29acefa90c97d012a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#af82d4068efedf29acefa90c97d012a7c">put_rbuf</a></td></tr>
+<tr class="memdesc:af82d4068efedf29acefa90c97d012a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate whether the blockdev layer to put rbuf or not.  <a href="#af82d4068efedf29acefa90c97d012a7c">More...</a><br /></td></tr>
+<tr class="separator:af82d4068efedf29acefa90c97d012a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d42e6267ab907b30aec2aa75c0f0ca"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a51d42e6267ab907b30aec2aa75c0f0ca">unmap_bdesc</a></td></tr>
 <tr class="memdesc:a51d42e6267ab907b30aec2aa75c0f0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the unmap block descriptors.  <a href="#a51d42e6267ab907b30aec2aa75c0f0ca">More...</a><br /></td></tr>
 <tr class="separator:a51d42e6267ab907b30aec2aa75c0f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,20 +263,6 @@ struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="ad54769b6194caf65b0dd626c399bd41d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* spdk_bdev_io::buf</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For single buffer cases, pointer to the aligned data buffer. </p>
-
-</div>
-</div>
 <a class="anchor" id="a10dc0e68647e41b13f257d1d5e8e73bf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -340,6 +319,21 @@ struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a class="anchor" id="a0429238075907c6f637249dda31f3235"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct iovec spdk_bdev_io::iov</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For basic read case, use our own iovec element. </p>
+<p>For basic write case, use our own iovec element.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa9024a5714c4c242271cdcbb34b45a91"></a>
 <div class="memitem">
 <div class="memproto">
@@ -393,20 +387,6 @@ struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Represents the number of bytes to be flushed, starting at offset. </p>
-
-</div>
-</div>
-<a class="anchor" id="a71d2ee34b46675b82ddaab2493523646"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t spdk_bdev_io::nbytes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For single buffer cases, size of the data buffer. </p>
 
 </div>
 </div>
