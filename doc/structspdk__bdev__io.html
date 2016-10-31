@@ -139,6 +139,24 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1c79ae452181ddce77671873df3dc482"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a1c79ae452181ddce77671873df3dc482">type</a></td></tr>
 <tr class="memdesc:a1c79ae452181ddce77671873df3dc482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerated value representing the I/O type.  <a href="#a1c79ae452181ddce77671873df3dc482">More...</a><br /></td></tr>
 <tr class="separator:a1c79ae452181ddce77671873df3dc482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7d52fd7d6ba8fed3814248c1486fd4"><td class="memItemLeft" ><a class="anchor" id="ace7d52fd7d6ba8fed3814248c1486fd4"></a>
+union {</td></tr>
+<tr class="memitem:aa880b0bdc1ee3d691faff264ed2cc0cf"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ac349fc6b46139a73e1f896c0eabc9cd3"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#af63b0cd9556cb284e2ce29c2e9f50a74">sct</a></td></tr>
+<tr class="memdesc:ac349fc6b46139a73e1f896c0eabc9cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe status code type. <br /></td></tr>
+<tr class="separator:ac349fc6b46139a73e1f896c0eabc9cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28de8f9055ae4277b6939e642dc13354"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a8535d736bbf2d03f19ddd28b58f60703">sc</a></td></tr>
+<tr class="memdesc:a28de8f9055ae4277b6939e642dc13354"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe status code. <br /></td></tr>
+<tr class="separator:a28de8f9055ae4277b6939e642dc13354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa880b0bdc1ee3d691faff264ed2cc0cf"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#af6c3288797362846db9aab999898cacb">nvme</a></td></tr>
+<tr class="memdesc:aa880b0bdc1ee3d691faff264ed2cc0cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid when status is SPDK_BDEV_IO_STATUS_NVME_ERROR. <br /></td></tr>
+<tr class="separator:aa880b0bdc1ee3d691faff264ed2cc0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7d52fd7d6ba8fed3814248c1486fd4"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ace7d52fd7d6ba8fed3814248c1486fd4">error</a></td></tr>
+<tr class="memdesc:ace7d52fd7d6ba8fed3814248c1486fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error information from a device. <br /></td></tr>
+<tr class="separator:ace7d52fd7d6ba8fed3814248c1486fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ab54596d1e12270a1d0de09d1be502b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ab54596d1e12270a1d0de09d1be502b"></a>
 spdk_bdev_io_completion_cb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a8ab54596d1e12270a1d0de09d1be502b">cb</a></td></tr>
 <tr class="memdesc:a8ab54596d1e12270a1d0de09d1be502b"><td class="mdescLeft">&#160;</td><td class="mdescRight">User function that will be called when this completes. <br /></td></tr>

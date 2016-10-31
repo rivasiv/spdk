@@ -111,11 +111,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 enum <a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20">spdk_nvme_cc_ams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444">arb_mechanism</a></td></tr>
 <tr class="memdesc:a183d97c9bda86a9ca47442bcbc69c444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of arbitration mechanism. <br /></td></tr>
 <tr class="separator:a183d97c9bda86a9ca47442bcbc69c444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2510f057d069ab99a00bfa9b747037b0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a2510f057d069ab99a00bfa9b747037b0">keep_alive_timeout_ms</a></td></tr>
+<tr class="memdesc:a2510f057d069ab99a00bfa9b747037b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep alive timeout in milliseconds (0 = disabled).  <a href="#a2510f057d069ab99a00bfa9b747037b0">More...</a><br /></td></tr>
+<tr class="separator:a2510f057d069ab99a00bfa9b747037b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
 <p>A pointer to this structure will be provided for each probe callback from <a class="el" href="nvme_8h.html#aac7ac5fe93429cfa45676d2dc6af5c10" title="Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if des...">spdk_nvme_probe()</a> to allow the user to request non-default options, and the actual options enabled on the controller will be provided during the attach callback. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a2510f057d069ab99a00bfa9b747037b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_opts::keep_alive_timeout_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Keep alive timeout in milliseconds (0 = disabled). </p>
+<p>The NVMe library will set the Keep Alive Timer feature to this value and automatically send Keep Alive commands as needed. The library user must call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a> periodically to ensure Keep Alive commands are sent. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme_8h.html">nvme.h</a></li>
 </ul>
 </div><!-- contents -->
