@@ -100,6 +100,7 @@ var searchData=
   ['spdk_5fnvme_5fopc_5fget_5fdata_5ftransfer',['spdk_nvme_opc_get_data_transfer',['../nvme__spec_8h.html#a3f96e024feb9e0cb23b941b847058102',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fprobe',['spdk_nvme_probe',['../nvme_8h.html#aac7ac5fe93429cfa45676d2dc6af5c10',1,'nvme.h']]],
   ['spdk_5fnvme_5fqpair_5fprocess_5fcompletions',['spdk_nvme_qpair_process_completions',['../nvme_8h.html#aa331d140870e977722bfbb6826524782',1,'nvme.h']]],
+  ['spdk_5fpci_5faddr_5fcompare',['spdk_pci_addr_compare',['../env_8h.html#a7f3decf485d6b797775bc4dd2215eb52',1,'env.h']]],
   ['spdk_5fpoller_5fregister',['spdk_poller_register',['../event_8h.html#a7366a9ca6bcab90c440fb1de54012fde',1,'event.h']]],
   ['spdk_5fpoller_5funregister',['spdk_poller_unregister',['../event_8h.html#ab0a17ad53e73a18c97c56fe041d4f91d',1,'event.h']]],
   ['spdk_5fprocess_5fis_5fprimary',['spdk_process_is_primary',['../env_8h.html#a798ae910c8563b33eea17af50cabb1ab',1,'env.h']]],

@@ -107,12 +107,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <map name="env_8hdep" id="env_8hdep">
 <area shape="rect" id="node2" href="ioat_8h.html" title="I/OAT DMA engine driver public interface. " alt="" coords="5,80,60,107"/>
 <area shape="rect" id="node3" href="nvme_8h.html" title="NVMe driver public API. " alt="" coords="84,80,149,107"/>
+<area shape="rect" id="node4" href="nvmf_8h.html" title="NVMe over Fabrics target public API. " alt="" coords="173,80,236,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__id.html">spdk_pci_id</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -167,6 +170,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1">spdk_delay_us</a> (unsigned int us)</td></tr>
 <tr class="memdesc:ab2e338ce2d6510489ae83bfff226b8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the given number of microseconds. <br /></td></tr>
 <tr class="separator:ab2e338ce2d6510489ae83bfff226b8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3decf485d6b797775bc4dd2215eb52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a7f3decf485d6b797775bc4dd2215eb52">spdk_pci_addr_compare</a> (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a1, const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a2)</td></tr>
+<tr class="memdesc:a7f3decf485d6b797775bc4dd2215eb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two PCI addresses.  <a href="#a7f3decf485d6b797775bc4dd2215eb52">More...</a><br /></td></tr>
+<tr class="separator:a7f3decf485d6b797775bc4dd2215eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated third-party dependencies. </p>
@@ -307,6 +313,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Reserve a named, process shared memory zone with the given size, socket_id and flags. </p>
 <p>Return a pointer to the allocated memory address. If the allocation cannot be done, return NULL. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f3decf485d6b797775bc4dd2215eb52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_addr_compare </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td>
+          <td class="paramname"><em>a2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare two PCI addresses. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 if a1 == a2, less than 0 if a1 &lt; a2, greater than 0 if a1 &gt; a2 </dd></dl>
 
 </div>
 </div>

@@ -95,6 +95,7 @@ var searchData=
   ['spdk_5fnvmf_5fsubsystem',['spdk_nvmf_subsystem',['../structspdk__nvmf__subsystem.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvmf_transport_specific_address_subtype',['../unionspdk__nvmf__transport__specific__address__subtype.html',1,'']]],
   ['spdk_5fpci_5faddr',['spdk_pci_addr',['../structspdk__pci__addr.html',1,'']]],
+  ['spdk_5fpci_5fid',['spdk_pci_id',['../structspdk__pci__id.html',1,'']]],
   ['spdk_5fscsi_5fcdb_5finquiry',['spdk_scsi_cdb_inquiry',['../structspdk__scsi__cdb__inquiry.html',1,'']]],
   ['spdk_5fscsi_5fcdb_5finquiry_5fdata',['spdk_scsi_cdb_inquiry_data',['../structspdk__scsi__cdb__inquiry__data.html',1,'']]],
   ['spdk_5fscsi_5fdesig_5fdesc',['spdk_scsi_desig_desc',['../structspdk__scsi__desig__desc.html',1,'']]],
