@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SPDK: Globals</title>
+<title>SPDK: spdk_nvme_probe_info Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -44,8 +44,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -66,21 +66,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="globals.html"><span>All</span></a></li>
-      <li><a href="globals_func.html"><span>Functions</span></a></li>
-      <li class="current"><a href="globals_type.html"><span>Typedefs</span></a></li>
-      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
-      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
-      <li><a href="globals_defs.html"><span>Macros</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -95,41 +85,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">spdk_nvme_probe_info Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>spdk_ioat_attach_cb
-: <a class="el" href="ioat_8h.html#a8826bf4e7c57228794f486368217a494">ioat.h</a>
-</li>
-<li>spdk_ioat_probe_cb
-: <a class="el" href="ioat_8h.html#a41d999ded01b3bc2b1a1bce0c48083a7">ioat.h</a>
-</li>
-<li>spdk_ioat_req_cb
-: <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">ioat.h</a>
-</li>
-<li>spdk_jsonrpc_handle_request_fn
-: <a class="el" href="jsonrpc_8h.html#a347b2b94044109e5dd61bfd672dd0a20">jsonrpc.h</a>
-</li>
-<li>spdk_nvme_aer_cb
-: <a class="el" href="nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d">nvme.h</a>
-</li>
-<li>spdk_nvme_attach_cb
-: <a class="el" href="nvme_8h.html#a14fb44100c10d071378ab19cf3e99d76">nvme.h</a>
-</li>
-<li>spdk_nvme_cmd_cb
-: <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">nvme.h</a>
-</li>
-<li>spdk_nvme_probe_cb
-: <a class="el" href="nvme_8h.html#a2102de2308a17d698bfe36c604bebf0e">nvme.h</a>
-</li>
-<li>spdk_nvme_remove_cb
-: <a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">nvme.h</a>
-</li>
-<li>spdk_nvme_req_next_sge_cb
-: <a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">nvme.h</a>
-</li>
-<li>spdk_nvme_req_reset_sgl_cb
-: <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">nvme.h</a>
-</li>
+
+<p>NVMe controller information provided during <a class="el" href="nvme_8h.html#aac7ac5fe93429cfa45676d2dc6af5c10" title="Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if des...">spdk_nvme_probe()</a>.  
+ <a href="structspdk__nvme__probe__info.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_nvme_probe_info:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__nvme__probe__info__coll__graph.png" border="0" usemap="#spdk__nvme__probe__info_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__nvme__probe__info_coll__map" id="spdk__nvme__probe__info_coll__map">
+<area shape="rect" id="node2" href="structspdk__pci__id.html" title="spdk_pci_id" alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node3" href="structspdk__pci__addr.html" title="spdk_pci_addr" alt="" coords="120,5,227,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a49c0d18a409e2f724b33ff0a38b5b682"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__probe__info.html#a49c0d18a409e2f724b33ff0a38b5b682">pci_addr</a></td></tr>
+<tr class="memdesc:a49c0d18a409e2f724b33ff0a38b5b682"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI address.  <a href="#a49c0d18a409e2f724b33ff0a38b5b682">More...</a><br /></td></tr>
+<tr class="separator:a49c0d18a409e2f724b33ff0a38b5b682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638b489de11dd30ca050cdf0b3de3b17"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__id.html">spdk_pci_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__probe__info.html#a638b489de11dd30ca050cdf0b3de3b17">pci_id</a></td></tr>
+<tr class="memdesc:a638b489de11dd30ca050cdf0b3de3b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI device ID.  <a href="#a638b489de11dd30ca050cdf0b3de3b17">More...</a><br /></td></tr>
+<tr class="separator:a638b489de11dd30ca050cdf0b3de3b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>NVMe controller information provided during <a class="el" href="nvme_8h.html#aac7ac5fe93429cfa45676d2dc6af5c10" title="Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if des...">spdk_nvme_probe()</a>. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a49c0d18a409e2f724b33ff0a38b5b682"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> spdk_nvme_probe_info::pci_addr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PCI address. </p>
+<p>If not available, each field will be filled with all 0xFs. </p>
+
+</div>
+</div>
+<a class="anchor" id="a638b489de11dd30ca050cdf0b3de3b17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__pci__id.html">spdk_pci_id</a> spdk_nvme_probe_info::pci_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PCI device ID. </p>
+<p>If not available, each field will be filled with all 0xFs. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="nvme_8h.html">nvme.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

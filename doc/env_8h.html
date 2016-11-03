@@ -120,6 +120,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f63fddd291ac3b0b3c4047807d59dc1"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8f63fddd291ac3b0b3c4047807d59dc1">spdk_malloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
+<tr class="memdesc:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment. <br /></td></tr>
+<tr class="separator:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a984f10f9ed752b7fab821c98ca171f63"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a984f10f9ed752b7fab821c98ca171f63">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a984f10f9ed752b7fab821c98ca171f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a984f10f9ed752b7fab821c98ca171f63">More...</a><br /></td></tr>
 <tr class="separator:a984f10f9ed752b7fab821c98ca171f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +177,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a7f3decf485d6b797775bc4dd2215eb52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a7f3decf485d6b797775bc4dd2215eb52">spdk_pci_addr_compare</a> (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a1, const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a2)</td></tr>
 <tr class="memdesc:a7f3decf485d6b797775bc4dd2215eb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two PCI addresses.  <a href="#a7f3decf485d6b797775bc4dd2215eb52">More...</a><br /></td></tr>
 <tr class="separator:a7f3decf485d6b797775bc4dd2215eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96187c4c0c5a302669f684e487ebaa0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a96187c4c0c5a302669f684e487ebaa0d">spdk_pci_addr_parse</a> (struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *addr, const char *bdf)</td></tr>
+<tr class="memdesc:a96187c4c0c5a302669f684e487ebaa0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string representation of a PCI address into a struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a>.  <a href="#a96187c4c0c5a302669f684e487ebaa0d">More...</a><br /></td></tr>
+<tr class="separator:a96187c4c0c5a302669f684e487ebaa0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated third-party dependencies. </p>
@@ -342,6 +349,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Compare two PCI addresses. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 if a1 == a2, less than 0 if a1 &lt; a2, greater than 0 if a1 &gt; a2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a96187c4c0c5a302669f684e487ebaa0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_addr_parse </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bdf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a string representation of a PCI address into a struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>PCI adddress output on success </td></tr>
+    <tr><td class="paramname">bdf</td><td>PCI address in domain:bus:device.function format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negated errno value on failure. </dd></dl>
 
 </div>
 </div>
