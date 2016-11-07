@@ -155,6 +155,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event
 <tr class="memitem:a2d8e75f24bcab29e8a1d6d0e88ae9da7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a2d8e75f24bcab29e8a1d6d0e88ae9da7">spdk_app_start</a> (spdk_event_fn start_fn, void *arg1, void *arg2)</td></tr>
 <tr class="memdesc:a2d8e75f24bcab29e8a1d6d0e88ae9da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the framework.  <a href="#a2d8e75f24bcab29e8a1d6d0e88ae9da7">More...</a><br /></td></tr>
 <tr class="separator:a2d8e75f24bcab29e8a1d6d0e88ae9da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbbb23263a8ea9c93c3adf8aa3bce8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e">spdk_app_start_shutdown</a> (void)</td></tr>
+<tr class="memdesc:a0bbbb23263a8ea9c93c3adf8aa3bce8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start shutting down the framework.  <a href="#a0bbbb23263a8ea9c93c3adf8aa3bce8e">More...</a><br /></td></tr>
+<tr class="separator:a0bbbb23263a8ea9c93c3adf8aa3bce8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40f3af1c0340f5c3eb915bc43e3cee83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83">spdk_app_stop</a> (int rc)</td></tr>
 <tr class="memdesc:a40f3af1c0340f5c3eb915bc43e3cee83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the framework.  <a href="#a40f3af1c0340f5c3eb915bc43e3cee83">More...</a><br /></td></tr>
 <tr class="separator:a40f3af1c0340f5c3eb915bc43e3cee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +262,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 
 <p>Start the framework. </p>
 <p>Once started, the framework will call start_fn on the master core with the arguments provided. This call will block until <a class="el" href="event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83">spdk_app_stop</a> is called. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0bbbb23263a8ea9c93c3adf8aa3bce8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_app_start_shutdown </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start shutting down the framework. </p>
+<p>Typically this function is not called directly, and the shutdown process is started implicitly by a process signal. But in applications that are using SPDK for a subset of its process threads, this function can be called in lieu of a signal. </p>
 
 </div>
 </div>
