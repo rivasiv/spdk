@@ -154,6 +154,27 @@ union {</td></tr>
 <tr class="memitem:aa880b0bdc1ee3d691faff264ed2cc0cf"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#af6c3288797362846db9aab999898cacb">nvme</a></td></tr>
 <tr class="memdesc:aa880b0bdc1ee3d691faff264ed2cc0cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid when status is SPDK_BDEV_IO_STATUS_NVME_ERROR. <br /></td></tr>
 <tr class="separator:aa880b0bdc1ee3d691faff264ed2cc0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70817ec229fb6808f1baea5ff505d46d"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:aa1c94bfacc135233e6f77c67c8eec4bf"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;enum spdk_scsi_status&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ad4968cad68ac08d5874317e49a16e49a">sc</a></td></tr>
+<tr class="memdesc:aa1c94bfacc135233e6f77c67c8eec4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI status code. <br /></td></tr>
+<tr class="separator:aa1c94bfacc135233e6f77c67c8eec4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe44e49ec462393a299b56b56ae18de0"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;enum spdk_scsi_sense&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab135fa2d55625053a32b1b10979aa807">sk</a></td></tr>
+<tr class="memdesc:afe44e49ec462393a299b56b56ae18de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI sense key. <br /></td></tr>
+<tr class="separator:afe44e49ec462393a299b56b56ae18de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f201f2564f2819c8a712bdb8af10a14"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a60b793ebd4c2482663680729f9a34cf3">asc</a></td></tr>
+<tr class="memdesc:a3f201f2564f2819c8a712bdb8af10a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI additional sense code. <br /></td></tr>
+<tr class="separator:a3f201f2564f2819c8a712bdb8af10a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03ab60e1b47abccb06e608463a4d584"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aa01c5d84fde2f20d21586e2b09d216b5">ascq</a></td></tr>
+<tr class="memdesc:aa03ab60e1b47abccb06e608463a4d584"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI additional sense code qualifier. <br /></td></tr>
+<tr class="separator:aa03ab60e1b47abccb06e608463a4d584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70817ec229fb6808f1baea5ff505d46d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a978b3abdf3fcfa4527757552cbbcacf3">scsi</a></td></tr>
+<tr class="memdesc:a70817ec229fb6808f1baea5ff505d46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid when status is SPDK_BDEV_IO_STATUS_SCSI_ERROR. <br /></td></tr>
+<tr class="separator:a70817ec229fb6808f1baea5ff505d46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7d52fd7d6ba8fed3814248c1486fd4"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ace7d52fd7d6ba8fed3814248c1486fd4">error</a></td></tr>
 <tr class="memdesc:ace7d52fd7d6ba8fed3814248c1486fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error information from a device. <br /></td></tr>
 <tr class="separator:ace7d52fd7d6ba8fed3814248c1486fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
