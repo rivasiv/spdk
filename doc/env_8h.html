@@ -184,10 +184,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a96187c4c0c5a302669f684e487ebaa0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a96187c4c0c5a302669f684e487ebaa0d">spdk_pci_addr_parse</a> (struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *addr, const char *bdf)</td></tr>
 <tr class="memdesc:a96187c4c0c5a302669f684e487ebaa0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string representation of a PCI address into a struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a>.  <a href="#a96187c4c0c5a302669f684e487ebaa0d">More...</a><br /></td></tr>
 <tr class="separator:a96187c4c0c5a302669f684e487ebaa0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafaea6fc34059237e54e0ab254d0f28"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#abafaea6fc34059237e54e0ab254d0f28">spdk_call_unaffinitized</a> (void *cb(void *arg), void *arg)</td></tr>
+<tr class="memdesc:abafaea6fc34059237e54e0ab254d0f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function with CPU affinity unset.  <a href="#abafaea6fc34059237e54e0ab254d0f28">More...</a><br /></td></tr>
+<tr class="separator:abafaea6fc34059237e54e0ab254d0f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated third-party dependencies. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="abafaea6fc34059237e54e0ab254d0f28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_call_unaffinitized </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb</em>void *arg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call a function with CPU affinity unset. </p>
+<p>This can be used to run a function that creates other threads without inheriting the calling thread's CPU affinity.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>function to call </td></tr>
+    <tr><td class="paramname">arg</td><td>parameter to cb function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the return value of cb() </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a452d670d7188f883224574dfabc39f2c"></a>
 <div class="memitem">
 <div class="memproto">

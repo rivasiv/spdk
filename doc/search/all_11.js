@@ -41,6 +41,7 @@ var searchData=
   ['spdk_5fbit_5farray_5fget',['spdk_bit_array_get',['../bit__array_8h.html#ac3a3cdf7c315e8723da2d8213f73e045',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fresize',['spdk_bit_array_resize',['../bit__array_8h.html#a87475f551d59a16d09f45eca6459009d',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fset',['spdk_bit_array_set',['../bit__array_8h.html#a13e840dcdf80ee0614e24c49da16a412',1,'bit_array.h']]],
+  ['spdk_5fcall_5funaffinitized',['spdk_call_unaffinitized',['../env_8h.html#abafaea6fc34059237e54e0ab254d0f28',1,'env.h']]],
   ['spdk_5fconf',['spdk_conf',['../structspdk__conf.html',1,'']]],
   ['spdk_5fconf_5fitem',['spdk_conf_item',['../structspdk__conf__item.html',1,'']]],
   ['spdk_5fconf_5fsection',['spdk_conf_section',['../structspdk__conf__section.html',1,'']]],

@@ -22,6 +22,7 @@ var searchData=
   ['spdk_5fbit_5farray_5fget',['spdk_bit_array_get',['../bit__array_8h.html#ac3a3cdf7c315e8723da2d8213f73e045',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fresize',['spdk_bit_array_resize',['../bit__array_8h.html#a87475f551d59a16d09f45eca6459009d',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fset',['spdk_bit_array_set',['../bit__array_8h.html#a13e840dcdf80ee0614e24c49da16a412',1,'bit_array.h']]],
+  ['spdk_5fcall_5funaffinitized',['spdk_call_unaffinitized',['../env_8h.html#abafaea6fc34059237e54e0ab254d0f28',1,'env.h']]],
   ['spdk_5fdelay_5fus',['spdk_delay_us',['../env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1',1,'env.h']]],
   ['spdk_5fdpdk_5fframework_5finit',['spdk_dpdk_framework_init',['../event_8h.html#af21e28775c1bec0a20eb3cb51d0a510f',1,'event.h']]],
   ['spdk_5fevent_5fallocate',['spdk_event_allocate',['../event_8h.html#a408b298cd313cbcfec68c79b7ee7622d',1,'event.h']]],
