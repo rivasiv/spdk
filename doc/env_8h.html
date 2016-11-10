@@ -127,6 +127,9 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="en
 <tr class="memitem:a984f10f9ed752b7fab821c98ca171f63"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a984f10f9ed752b7fab821c98ca171f63">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a984f10f9ed752b7fab821c98ca171f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a984f10f9ed752b7fab821c98ca171f63">More...</a><br /></td></tr>
 <tr class="separator:a984f10f9ed752b7fab821c98ca171f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac48f01e1a2b51c2f7fc1904cd6e59022">spdk_realloc</a> (void *buf, size_t size, size_t align, uint64_t *phys_addr)</td></tr>
+<tr class="memdesc:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the allocated and pinned memory buffer with the given new size and alignment.  <a href="#ac48f01e1a2b51c2f7fc1904cd6e59022">More...</a><br /></td></tr>
+<tr class="separator:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452d670d7188f883224574dfabc39f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a452d670d7188f883224574dfabc39f2c">spdk_free</a> (void *buf)</td></tr>
 <tr class="memdesc:a452d670d7188f883224574dfabc39f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated with spdk_zmalloc.  <a href="#a452d670d7188f883224574dfabc39f2c">More...</a><br /></td></tr>
 <tr class="separator:a452d670d7188f883224574dfabc39f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,6 +432,47 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negated errno value on failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac48f01e1a2b51c2f7fc1904cd6e59022"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_realloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>phys_addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resize the allocated and pinned memory buffer with the given new size and alignment. </p>
+<p>Existing contents are preserved. </p>
 
 </div>
 </div>

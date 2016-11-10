@@ -4,7 +4,6 @@ var searchData=
   ['id',['id',['../structspdk__scsi__lun.html#a55315730dc30c666ed13cdc17f21248c',1,'spdk_scsi_lun']]],
   ['ieee',['ieee',['../structspdk__nvme__ctrlr__data.html#a5b9650f02ffc24e94a6708b33272c415',1,'spdk_nvme_ctrlr_data']]],
   ['io_5fchannel',['io_channel',['../structspdk__scsi__lun.html#a6921353d1f30e355b09325e6b0dcc4c9',1,'spdk_scsi_lun']]],
-  ['io_5ftype_5fsupported',['io_type_supported',['../structspdk__bdev__fn__table.html#ae6d319cbc2243dd0d5e20b272f733efb',1,'spdk_bdev_fn_table']]],
   ['ioccsz',['ioccsz',['../structspdk__nvme__ctrlr__data.html#ac6c0c28dbff6a34416a723cd77c4064a',1,'spdk_nvme_ctrlr_data']]],
   ['iocqes',['iocqes',['../unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106',1,'spdk_nvme_cc_register']]],
   ['iorcsz',['iorcsz',['../structspdk__nvme__ctrlr__data.html#a7234a2b9f5741883bba676b1036781e0',1,'spdk_nvme_ctrlr_data']]],

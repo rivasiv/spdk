@@ -15,7 +15,6 @@ var searchData=
   ['ssvid',['ssvid',['../structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f',1,'spdk_nvme_ctrlr_data']]],
   ['start',['start',['../structspdk__json__val.html#acd221be089fb848898b736d31add7053',1,'spdk_json_val']]],
   ['status',['status',['../structspdk__bdev__io.html#a55d5842220321a8a1b0693ee3baa2f96',1,'spdk_bdev_io']]],
-  ['submit_5frequest',['submit_request',['../structspdk__bdev__fn__table.html#a5a794a22f45af583627ff697720248ce',1,'spdk_bdev_fn_table']]],
   ['subnqn',['subnqn',['../structspdk__nvmf__discovery__log__page__entry.html#a797dfd34a151a7c7d9942a7ad179aac5',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['subtype',['subtype',['../structspdk__nvmf__discovery__log__page__entry.html#a2cc3f0c6ab0ebb7eb85cd3058f0f787f',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['supported',['supported',['../structspdk__nvme__ctrlr__data.html#a67327a265027227d37f9b7e947c06cfc',1,'spdk_nvme_ctrlr_data']]],

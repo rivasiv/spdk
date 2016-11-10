@@ -132,9 +132,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a0e1fcb43970ea531567ee00d4ee0675b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a>) (void *cb_arg, uint32_t offset)</td></tr>
 <tr class="memdesc:a0e1fcb43970ea531567ee00d4ee0675b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restart the SGL walk to the specified offset when the command has scattered payloads.  <a href="#a0e1fcb43970ea531567ee00d4ee0675b">More...</a><br /></td></tr>
 <tr class="separator:a0e1fcb43970ea531567ee00d4ee0675b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa00211de8f54e25a4f9a5a93fb17d8a1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">spdk_nvme_req_next_sge_cb</a>) (void *cb_arg, uint64_t *address, uint32_t *length)</td></tr>
-<tr class="memdesc:aa00211de8f54e25a4f9a5a93fb17d8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill out *address and *length with the current SGL entry and advance to the next entry for the next time the callback is invoked.  <a href="#aa00211de8f54e25a4f9a5a93fb17d8a1">More...</a><br /></td></tr>
-<tr class="separator:aa00211de8f54e25a4f9a5a93fb17d8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab95bea86f498c08510f6f0bcd2eb09"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>) (void *cb_arg, void **address, uint32_t *length)</td></tr>
+<tr class="memdesc:a4ab95bea86f498c08510f6f0bcd2eb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill out *address and *length with the current SGL entry and advance to the next entry for the next time the callback is invoked.  <a href="#a4ab95bea86f498c08510f6f0bcd2eb09">More...</a><br /></td></tr>
+<tr class="separator:a4ab95bea86f498c08510f6f0bcd2eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -255,7 +255,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a3065f669d8b605efdcadffbf94a50538"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538">spdk_nvme_ns_cmd_write</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a3065f669d8b605efdcadffbf94a50538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#a3065f669d8b605efdcadffbf94a50538">More...</a><br /></td></tr>
 <tr class="separator:a3065f669d8b605efdcadffbf94a50538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfcbb5d31f0b572847cc8ae8b07dfcfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb">spdk_nvme_ns_cmd_writev</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
+<tr class="memitem:adfcbb5d31f0b572847cc8ae8b07dfcfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb">spdk_nvme_ns_cmd_writev</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
 <tr class="memdesc:adfcbb5d31f0b572847cc8ae8b07dfcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#adfcbb5d31f0b572847cc8ae8b07dfcfb">More...</a><br /></td></tr>
 <tr class="separator:adfcbb5d31f0b572847cc8ae8b07dfcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2aa2be0d657be0c63d5abc02b274ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec">spdk_nvme_ns_cmd_write_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
@@ -267,7 +267,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a084c6ecb53bd810fbb5051100b79bec5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5">spdk_nvme_ns_cmd_read</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a084c6ecb53bd810fbb5051100b79bec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#a084c6ecb53bd810fbb5051100b79bec5">More...</a><br /></td></tr>
 <tr class="separator:a084c6ecb53bd810fbb5051100b79bec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb47ce7de6b6e963ec9fb8de261466ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae">spdk_nvme_ns_cmd_readv</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
+<tr class="memitem:acb47ce7de6b6e963ec9fb8de261466ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae">spdk_nvme_ns_cmd_readv</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
 <tr class="memdesc:acb47ce7de6b6e963ec9fb8de261466ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#acb47ce7de6b6e963ec9fb8de261466ae">More...</a><br /></td></tr>
 <tr class="separator:acb47ce7de6b6e963ec9fb8de261466ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2913b93326e636eca6dfe7b42e349fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe">spdk_nvme_ns_cmd_read_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
@@ -386,18 +386,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 
 </div>
 </div>
-<a class="anchor" id="aa00211de8f54e25a4f9a5a93fb17d8a1"></a>
+<a class="anchor" id="a4ab95bea86f498c08510f6f0bcd2eb09"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* spdk_nvme_req_next_sge_cb) (void *cb_arg, uint64_t *address, uint32_t *length)</td>
+          <td class="memname">typedef int(* spdk_nvme_req_next_sge_cb) (void *cb_arg, void **address, uint32_t *length)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Fill out *address and *length with the current SGL entry and advance to the next entry for the next time the callback is invoked. </p>
-<p>The cb_arg parameter is the value passed to readv/writev. The address parameter contains the physical address of this segment. The length parameter contains the length of this physical segment. </p>
+<p>The cb_arg parameter is the value passed to readv/writev. The address parameter contains the virtual address of this segment. The length parameter contains the length of this physical segment. </p>
 
 </div>
 </div>
@@ -1644,7 +1644,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
           <td class="paramname"><em>next_sge_fn</em>&#160;</td>
         </tr>
         <tr>
@@ -2283,7 +2283,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
           <td class="paramname"><em>next_sge_fn</em>&#160;</td>
         </tr>
         <tr>
