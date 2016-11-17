@@ -124,5 +124,7 @@ var searchData=
   ['spdk_5ftrace_5fget_5ftpoint_5fmask',['spdk_trace_get_tpoint_mask',['../trace_8h.html#a346327ec1addd7eeb87963b40cec1821',1,'trace.h']]],
   ['spdk_5ftrace_5fset_5ftpoint_5fgroup_5fmask',['spdk_trace_set_tpoint_group_mask',['../trace_8h.html#aa0ade5c1286d121c2eafeae8918169db',1,'trace.h']]],
   ['spdk_5ftrace_5fset_5ftpoints',['spdk_trace_set_tpoints',['../trace_8h.html#a6f2131f1fc35d495f51552eb2838630b',1,'trace.h']]],
+  ['spdk_5fvtophys_5fregister',['spdk_vtophys_register',['../env_8h.html#a4613fa88ca335f651857774bea025db2',1,'env.h']]],
+  ['spdk_5fvtophys_5funregister',['spdk_vtophys_unregister',['../env_8h.html#a89d31d1faa8f36266776e0a7b7573a22',1,'env.h']]],
   ['spdk_5fzmalloc',['spdk_zmalloc',['../env_8h.html#a984f10f9ed752b7fab821c98ca171f63',1,'env.h']]]
 ];

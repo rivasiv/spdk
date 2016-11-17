@@ -181,6 +181,12 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1">spdk_delay_us</a> (unsigned int us)</td></tr>
 <tr class="memdesc:ab2e338ce2d6510489ae83bfff226b8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the given number of microseconds. <br /></td></tr>
 <tr class="separator:ab2e338ce2d6510489ae83bfff226b8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4613fa88ca335f651857774bea025db2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4613fa88ca335f651857774bea025db2">spdk_vtophys_register</a> (void *vaddr, uint64_t len)</td></tr>
+<tr class="memdesc:a4613fa88ca335f651857774bea025db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the specified memory region for vtophys address translation.  <a href="#a4613fa88ca335f651857774bea025db2">More...</a><br /></td></tr>
+<tr class="separator:a4613fa88ca335f651857774bea025db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d31d1faa8f36266776e0a7b7573a22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a89d31d1faa8f36266776e0a7b7573a22">spdk_vtophys_unregister</a> (void *vaddr, uint64_t len)</td></tr>
+<tr class="memdesc:a89d31d1faa8f36266776e0a7b7573a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the specified memory region from vtophys address translation.  <a href="#a89d31d1faa8f36266776e0a7b7573a22">More...</a><br /></td></tr>
+<tr class="separator:a89d31d1faa8f36266776e0a7b7573a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3decf485d6b797775bc4dd2215eb52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a7f3decf485d6b797775bc4dd2215eb52">spdk_pci_addr_compare</a> (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a1, const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a2)</td></tr>
 <tr class="memdesc:a7f3decf485d6b797775bc4dd2215eb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two PCI addresses.  <a href="#a7f3decf485d6b797775bc4dd2215eb52">More...</a><br /></td></tr>
 <tr class="separator:a7f3decf485d6b797775bc4dd2215eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -473,6 +479,64 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Resize the allocated and pinned memory buffer with the given new size and alignment. </p>
 <p>Existing contents are preserved. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4613fa88ca335f651857774bea025db2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vtophys_register </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the specified memory region for vtophys address translation. </p>
+<p>The memory region must map to pinned huge pages (2MB or greater). </p>
+
+</div>
+</div>
+<a class="anchor" id="a89d31d1faa8f36266776e0a7b7573a22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vtophys_unregister </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister the specified memory region from vtophys address translation. </p>
+<p>The caller must ensure all in-flight DMA operations to this memory region are completed or cancelled before calling this function. </p>
 
 </div>
 </div>
